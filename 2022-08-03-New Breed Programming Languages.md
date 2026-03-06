@@ -1,0 +1,92 @@
+# 2022-08-03-New Breed Programming Languagesstruggle for explaining concepts
+- nothing new, just rearranging deck chairs
+
+- Factorial
+- Diagrams
+- 0D
+- Inverse Inheritance
+- Async vs. Sync
+- Sector Lisp, Smallness, Bloatware
+- 2 kinds of problem
+- 2 kinds of Component
+	- not 1
+- stacks vs queues (LIFOs vs FIFOs, callstack)
+- Isolation
+	- every diagram / piece of code stands on its own and cannot be affected by other pieces
+- question: TTL hardware was async, but designs worked, whereas software leads to brittle designs
+	- gearboxes
+	- culture of upgrade
+	- sync resists human understanding, free will
+- simplicity
+	- lack of nuance
+	- parameters == bad
+- no 1 language to rule them all
+	- multiple languages per project
+	- need a way to join disparate languages into single project
+- coordination language
+	- too weak
+	- needs to be 1st class
+		- like functions - when raised to 1st class, new vistas opened up (programmer UX? freedom to think)
+- Dynamic vs. Static Languages
+- Structure Editing
+	- bad
+	- symptom of "1 language to rule them all"-thinking
+	- KISS
+		- editor edit
+		- checkers check (e.g. lint)
+		- code emitters emit, transpile
+- sync / text invented in mid-1900s
+	- biased due to technology
+	- mathematics notation invented for clay tablets and paper
+		- mathematics is 2 things
+		1. notation
+		2. thinking
+		- redirect thinking into new notations
+		- thinking can't be replaced, but notation can
+	- computers offer new ways to express multi-dimensional problems
+		- sync was invented to analyze single-CPU problems
+		- now, though, we have distributed problems
+			- time for a notation change/upgrade
+			- not good enough to "model" behaviour in single-CPU notation
+- ASON
+- DALL-E
+	- https://jacobmartins.com/posts/how-i-used-dalle2-to-generate-the-logo-for-octosql/
+- Descript
+	- make linear editing Audio and Video more accessible by completely revamping the paradigm
+- Bicycles for the Mind
+	- Kasparov uses computers to augment chess decisions
+- Erlang, Actors
+	- implemented using sync tech
+	- faked out async
+	- could be much simpler
+- Smalltalk
+	- doesn't do message passing (!)
+	- methods are implemented as sync
+- model: 2 rPIs connnected by 2 1-way wires
+	- allowing bi-directional wires is an optimization
+- Abstraction
+	- lasso group of components, move off-page, replace with 1 component with fewer Ports
+	- fan-out, fan-in
+- electronics is async at base
+	- sync was human invention
+	- Motorola CPUs vs Zilog CPUs
+- functions follow blocking protocol
+	- waiting for result from callee (call return) is blocking
+	- interferes with O/S control of blocking
+	- makes brittle gearboxes, change "here", unexpected effect "there" (whack-a-mole)
+- scalability
+	- organize as tree (not graph)
+	- biz ORG charts
+	- optimized code <- reorganized to share structure <- can't be scaled
+- DRY
+	- --> schizophrenia in OO
+		- inherit for semantic reasons?
+		- inherit to share code?
+	- --> inefficient use of functions at runtime for containment of code
+		- containment could easily be macro expansion by editor, not CPU
+		- e.g. 
+		```
+		function xyz (...) { ... }
+		function 
+			- 
+```

@@ -1,0 +1,275 @@
+# 2023-06-04-Little Networks and Little Languages# Little Networks and Little Languages
+- we already have big networks and big languages
+	- UNIX pipelines
+	- Browser to browser networks
+	- FBP
+	- S/SL 
+- Browser to browser networks
+		- low-level programming in HTML plus anything-that-compiles-to-JS
+- FBP
+	- https://jpaulm.github.io/fbp/
+	- Discord: https://discord.gg/3DaXhg7N
+- S/SL 
+		- dataless language
+		- uses pattern matching to go beyond type checking
+		- syntax forms backbone that can be annotated with action code
+		- https://research.cs.queensu.ca/home/cordy/pub/downloads/ssl/
+- Ohm-JS / PEG
+		- I want a hamburger with cheese and ketchup
+		- phrase "I want a hamburger"
+		- "with" is parameter lead-in
+		- "cheese" is a parameter (constant)
+		- "ketchup" is a parameter (constant)
+		- "and" is a parameter joining symbol (like comma)
+		- Ohm grammar for above: 
+			- `Phrase = "I" "want" "a" "hamburger" Condiments`?
+			- `Condiments = "with" Condiment ("and" Condiment)*`
+- FAB
+	- FABricator - SCN for actions
+	- 0 or 1 action associated with grammar rules by name
+	- SCN == little DSL
+- Characteristics
+	- node = unit of software / computing / action
+	- intra-node communication = message passing via FIFOs
+	- LIFOs are usable only for inter-node communication, i.e, single-threaded
+	- missing: "structuring" of message passing, nesting, hierarchicalization
+	- missing: syntactic elements beyond text (essentially ASCII art)
+	- missing: "language" to describe networks
+		- we have atomic, low-level elements, like threads and APIs and UDP and ...
+		- these are all essentially "assembler" for constructing networks
+		
+- Reality of CPUs
+	- CPUs are glorified FPGAs
+	- must be programmed using sequential scripts
+		- this does not mean that all higher-level languages must be sequential, too
+- Reality of Popular Programming Languages
+	- most popular programming languages are, nonetheless, text-based
+	- most popular programming languages are, nonetheless, sequential
+- How?
+	- create new syntaxes in hours instead of years
+	- don't reinvent the wheel - use existing languages to do the heavy lifting
+		- Alan Kay
+			- [https://www.youtube.com/watch?v=fhOHn9TClXY&t=859s](https://www.youtube.com/watch?v=fhOHn9TClXY&t=859s)
+			- 31:50 "In a 'real' Computer Science, the best languages of an era should serve as 'assembly code" for the next generation of expression.
+
+- How? Syntaxes
+	- Ohm-JS
+	- PEG
+	- avoid CFGs
+- How?  Using Existing Languages as Assembler
+	- verbatims
+	- RT
+	- Ohm-JS/PEG phrases 
+	- backtracking, exhaustive search, makes parsing text "easy"
+	- transpile other syntaxes - e.g. diagrams - to text
+		- e.g. JSON
+		- e.g. XML, graphml
+	- Surprise!
+		- draw.io saves diagrams in text form (mxGraph - essentially XML)
+		- Excalidraw -> JSON
+		- Kinopio -> JSON
+- peepholing
+- OCG - Orthogonal Code Generator
+- Orthogonal Programming Languages
+	- use OO as *operands* (not as control flow)
+	- need to skin with orthogonal syntax for control flow
+- State is Not Bad
+	- overloading State with concepts of conditional evaluation plus sequencing is bad, though
+	- separate use of State into useful use-cases
+	- e.g. OO ==> `case` on `type` (a single control-flow use-case) (Bertrand Meyer)
+	- e.g. Drakon ==> control flow of sequencing logic (a different control-flow use case)
+	- e.g. Statecharts ==> control flow of sequencing logic
+- How? FIFOs and Intra-Component Communication
+	- FIFO classes
+	- not function calling
+	- 0D
+- How? RT Recursive Text
+	- use Lisp-like syntax but NOT lisp-like eval()
+	- replace eval() with Ohm-JS-based transpiler
+	- specialize syntax for specific problem
+		- avoid General Programming Language designs and ensuing bloatware
+	- specialize syntax for specific emitters (Python, JS, Rust, etc.)
+- Further...
+	- FBP webpage and discord
+	- S/SL and PT Pascal
+	- Ohm-JS.org
+	- Kinopio brainstorming/digital garden "Little Languages"
+	- Drakon
+	- Statecharts
+		- my reading
+	- Ford PEG thesis
+- Ohm-JS vs Other PEG
+	- grammar clean, actions separated from grammar
+	- grammar and actions joined by rule name
+	- Ohm-JS: actions written in JS
+	- FAB: actions written in FAB syntax
+	- grammar written in Ohm-JS syntax in both cases
+- What Disappears?
+	- packaging
+	- thread safety
+- Concepts
+	- apps written as little networks composed of nodes
+	- nodes are little islands of code written in any (current, sequential) language
+	- nodes can only communicate using Structured Message Passing
+	- corollary: nodes cannot CALL one another
+	- corollary: functions, callstacks can ONLY be used *inside* of nodes
+	- perfect Send ()
+	- relative Send ()
+	- nodes are isolated from one another
+	- relative addressing only
+		- Architectural flexibility
+	- deprecate operating systems
+	- deprecate programming languages "one language to rule them all" concept
+	- delete multitasking, threading, time-sharing, thread safety, preemption
+	- allow mutation inside of nodes, but no mutation at network level
+	- Loop/Recursion make no sense
+	- paradigms, not syntax
+	- encapsulation superceded by isolation
+	- optimization of sequential code <-- peepholing
+	- optimization of graphs <-- tree rewriting algorithms
+- Why DAS, Why Diagrams?
+	- more expressive syntax for networks than text
+	- small number of figures and lines (e.g. rectangle, ellipse, arrow, text)
+	- grouping
+	- 0, 1, more-than-1 inputs
+	- 0, 1, more-than-1 outputs
+	- more expressive than function syntax (function = exactly 1 input, exactly 1 output, epicyclic syntax required to express exceptions ; function => ad-hoc blocking (block waiting for return from callee))
+	- many happy paths, not just one happy path
+		- tenet of networking - if one route fails to deliver, try another - this is not an *exception* it is a fact of life, simply another happy path
+- timeout
+	- timer component
+		- input = countdown request
+		- input = cancel
+		- output = timeout
+		- race condition = timeout is sent while cancel en route
+- Type-Checking - Who Does Type-Checking Help?
+	- end-user doesn't care what was used to develop an app
+	- developer might save development time => reduced cost to end-user
+	- developer must expend development time to meticulously annotate all types
+	- Is type inferencing better?  Does it alleviate need for most type annotations?
+		- Like GC for memory allocation?  Necessary, but can be elided in 90% of use-cases.
+	- Type Checking, as we know it, cannot catch Requirements blunders
+	- Design Rules are "more" than type-checking
+		- rules apply to specific solution, not generalized
+		- types + preconditions + postconditions + whatever-is-important-to-the-design
+		- some rules can be specified declaratively (e.g. types, preconditions, postconditions)
+		- some rules are so specific that they need to be written as code
+	- Pattern Matching
+		- "more" than type-checking
+		- "syntax"-driven actions
+		- pattern matching technology exists for text-based documents 
+			- i.e. *parsers*, Ohm-JS, YACC, PEG, ...
+		- "syntax" is "type" on steroids
+		- CFGs benefit one small class of syntaxes
+			- can be formalized
+			- can be automated
+		- non-CFGs 
+			- PEG can be used to formalize and automate non-CFG concepts
+	- type checking helps the 1%-ers
+		- i.e. Programmers
+		- i.e. the *elites* find type-checking helpful, the end-users 99% just don't care
+	- type checking is defined by 1% of the 1%-ers
+		- i.e. programming language designers and academics define "what" type checking is
+		- i.e. type checking is defined by the 0.01%-er elite-of-the-elites
+- PEG
+	- uses backtracking to recognize non-CFG sequences of tokens
+	- in 1950s, backtracking was considered to be too expensive
+	- in 2023++, though, computing hardware efficiency makes backtracking usable
+		- why waste brain-power on epicycles based on 1950s biases?
+		- we can use once-believed-to-be-inefficient technology and use brain-power for haughtier concepts
+	- Ford's PEG + Packrat parsing technology makes backtracking search practical
+- Connector
+	1. output port
+	2. input port
+	3. direction (across, down, up, through)
+	- owner == Container, not Sender or Receiver
+	- Directions
+		- across
+			- peer to peer
+		- down
+			- Container input to child input
+		- up 
+			- child output to Container output
+		- through
+			- Container output to Container output (self to self)
+- Design vs. Production Engineering
+	- Design requires iteration, not Waterfall thinking
+	- GIT supports Waterfall, but make iteration clunky
+	- iteration
+		- many branches
+		- ability to abandon branch(es)
+		- alpha-beta pruning
+		- try out an idea, snap back to previous place
+		- remember many possible paths - annotate intentions
+		- undo does not support multiple branches
+			- undo is too linear
+		- need a "branching editor"
+			- remember, memo, all edits on all branches
+			- how to snap back to previous?
+			- can't / don't-want-to predict when beginning a new branch - breaks "flow"
+- FLOW in Programming
+	- what interrupts FLOW?
+		- asking "where do you want to save this?" when user is in FLOW
+		- asking "what kind of mind-map do yo want to create?" when user is in FLOW
+		- asking for technology appeasement details when user is in FLOW
+			- e.g. declaration-before-use in compiled languages (born out of 1950s "efficiency" mind-set)
+			- e.g. synchronizing operations that don't really need to be synchronized (90% of use-cases?)
+		- poor input devices
+			- membrane keyboard instead of buckling springs
+			- voice-to-text AI - too linear?
+	- jot down ideas now, organize later
+		- Scapple
+		- Kinopio
+		- napkin at restaurant
+		- whiteboards and coloured markers
+		- ad-hoc "syntax" 
+			- edit and clean up later
+			- hand-drawn figures aren't perfect
+	- using 1 mouse instead of 5 fingers
+	- marking "multiple takes" instead of simply recording them in a layered fashion
+	- Logic Pro: audio recording of multiple takes == select region, press RECORD, recorder loops over region and stacks the audio snippets (bad = need to select region first (ok for editing, not ok for creation))
+	- What is FLOW? What is FLOW in Programming?
+		- create now, without friction
+		- edit later
+		- don't interrupt FLOW
+		- used to be called "The Zone"
+		- usually associated with physical action, like sports,
+			- but, also happens in "thinking" actions, like Design, Programming, Analysis
+	- RECORD stream-of-consciousness
+		- how to edit quickly, without needing to listen to the whole thing again?
+		- how to quickly remove rambling - quick first pass?  How to record Iteration?
+		- markers too linear
+			- need branching markers?
+			- stacking markers?
+	- Stack/Layer after-the-fact? Recursive stacking? (Stacks within stacks) ; add "regions" after-the-fact
+		- convert recursive stacks into linear stream by selecting top of each stack
+		- rearrange stacks, before flattening
+- Simplicity
+	- lack of nuance
+	- no options
+	- Rule of 7
+		- https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two
+		- no piece of code should have more than 7 pieces of information in it
+			- how? 
+				- layering
+				- Parental Authority, not Inheritance
+
+- What is Assembler?
+	- API for electronics arranged onto VLSI chips
+	- a set of instructions - opcodes - that are implemented as electronics in the VLSI
+	- electronics is asynchronous, Assembler API is synchronous and sequential
+	- a stepping-stone towards other higher level thinking and languages
+	- ALL existing programming languages transpile to sequential assembler 
+		- including 3GLs like Haskell, etc.
+		- including *relational* (non-sequential) languages like PROLOG, miniKanren, (core.logic for Clojure)
+	- most higher level follow the lead set by Assembler - i.e. sequential / synchronous structure - but this is unnecessary (see: Relational languages)
+
+- humans have cognitive limits, 
+	- e.g. the Magical Number Seven, Plus or Minus Two
+	- https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two
+- does GPT have similar cognitive limits?
+	- is this a Golden Number? a universal truth? a universal constant?
+	- is it necessary to arrange information in a hierarchy?
+	- or, does GPT's perfect memory change this pattern?
+
+- … and then there’s the “subtle” (but major) difference between synchronous and asynchronous thingies.  When anyone, except programmers, draws a drawing on a whiteboard/napkin/whatever, they assume isolated components (asynchrony).  I.E. Christopher Alexander.  To convert a drawing to a piece of code in a synchronous language (e.g. Haskell, Lisp, etc.), use FIFOs instead of function calls and (structured) message passing between figures on the diagram (OK to use function calls _inside_ figures, but not for component-2-component communication)…

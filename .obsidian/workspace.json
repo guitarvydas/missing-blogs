@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "1c9f18a9bbdba71d",
+    "type": "split",
+    "children": [
+      {
+        "id": "59775e3385da49a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cad05b063fa4dc4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023-10-31-What If? (Philosophy).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2023-10-31-What If? (Philosophy)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "80deccd4f02c9a23",
+    "type": "split",
+    "children": [
+      {
+        "id": "aac9d68de8f399ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19da245605080fb0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1620d1f5ac58e56c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "db8c8c3538958e13",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 534.5
+  },
+  "right": {
+    "id": "9820bb31cbffbd9e",
+    "type": "split",
+    "children": [
+      {
+        "id": "940f6ac735b6068e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "274aae9cbc247d1c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2023-10-31-What If? (Philosophy).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2023-10-31-What If? (Philosophy)"
+            }
+          },
+          {
+            "id": "9d39ce2ba58e9af9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2023-10-31-What If? (Philosophy).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2023-10-31-What If? (Philosophy)"
+            }
+          },
+          {
+            "id": "3e7eae8c770bf519",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e4dcafa0692f12f6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "eba0694325a5b90d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2023-10-31-What If? (Philosophy).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2023-10-31-What If? (Philosophy)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "cad05b063fa4dc4d",
+  "lastOpenFiles": [
+    "README.md",
+    "2023-07-31-Race Conditions.md",
+    "2023-07-30-Alan Kay quote.md",
+    "2023-07-19-(Experimental) Converting Point-Form Notes into Text Summaries.md",
+    "2023-07-01-Skimming Parser.md",
+    "2023-07-01-Skimming Parser.md~",
+    "2023-07-01-GOTO.md",
+    "2023-06-21-Wart In Static Type Checking.md",
+    "2023-06-03-I Did Not Anticipate.md",
+    "2023-05-24-Timeout.md",
+    "2023-05-12-Recent Writings.md",
+    "2023-04-27-Co-Writing.md",
+    "2023-03-12-SeqTest0 A Simple Container Component.md",
+    "2023-01-18 Comp Sci Cabal Jan 12 2024.md",
+    "2023-02-14-Test Image.md",
+    "2022-11-18-Simplicity.md",
+    "2022-07-22-Update For My Friends.md",
+    "images/2023-03-12-CL0D Basics 2023-03-12 14.21.08.excalidraw_1.png",
+    "images/2023-03-12-CL0D Basics 2023-03-12 14.20.14.excalidraw_1.png",
+    "images/2023-03-12-CL0D Basics 2023-03-12 14.20.14.excalidraw.png",
+    "images/2023-03-12-CL0D Basics 2023-03-12 14.19.06.excalidraw_1.png",
+    "images/2023-03-12-CL0D Basics 2023-03-12 14.18.24.excalidraw_1.png",
+    "images/2023-03-12-CL0D Basics 2023-03-12 14.12.14.excalidraw_1.png",
+    "images/2023-03-12-CL0D Basics 2023-03-12 14.12.14.excalidraw.png",
+    "images/0d v2-0Dv2.drawio_1.png",
+    "images/0d v2-0Dv2.drawio_12.png",
+    "images/0d v2-0Dv2.drawio_11.png",
+    "2023-08-26-Design, Engineering, Production Engineering.md",
+    "2023-10-22-ECS Thoughts.md",
+    "2023-04-15-Slides.md",
+    "2022-09-29-audio shell.md",
+    "2022-07-01-Golf.md"
+  ]
+}
