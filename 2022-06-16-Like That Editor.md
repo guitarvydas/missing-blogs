@@ -14,7 +14,7 @@ Technologies like *git* and *diff* can be applied.
 
 Bassett suggests a text-based script editing system to achieve multiple use.
 
-[NiCad](https://www.cs.usask.ca/~croy/papers/2011/CR-NiCad-Tool-ICPC11.pdf) discusses technology for detecting cloned software text-based code.
+[NiCad](https://www.cs.usask.ca/!croy/papers/2011/CR-NiCad-Tool-ICPC11.pdf) discusses technology for detecting cloned software text-based code.
 
 SVG and various editors, like [draw.io](https://app.diagrams.net) support the idea of floating, overlapping blocks of text, and, they support transparency.
 
@@ -39,6 +39,6 @@ Presently, programmers already perform the above operations manually in an ad-ho
 
 At first, programmers can indicate which blocks are overridable.  In time, methods to automate overriding will be developed, and, will require no extra information from programmers.
 
-!![../pm/like that editor-text.png](images/like that editor-text.png)
+![../pm/like that editor-text.png](images/like that editor-text.png)
 ## Diagram Editor
-!![../pm/like that editor-diagram.png](images/like that editor-diagram.png)
+![../pm/like that editor-diagram.png](images/like that editor-diagram.png)

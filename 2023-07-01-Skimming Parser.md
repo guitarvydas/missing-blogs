@@ -39,7 +39,7 @@ Reducing the problem to a test case we get something like `(a:(n),b)`.  This isn
 
 Let's draw a diagram of the string and note the skimming operations that could be used.
 
-!![Skip.drawio.svg](Skip.drawio.svg)
+![Skip.drawio.svg](Skip.drawio.svg)
 
 Reading from left to right, we see the operations:
 1. accept a single character "("

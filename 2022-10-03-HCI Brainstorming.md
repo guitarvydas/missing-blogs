@@ -10,7 +10,7 @@
 - observation: `fn(x,y,z)` -- x,y,z is ONE parameter (one block of data in time), but deconstructed using ASCII into separate sub-data
 - observation: (lambda (...) ... ) is ASCII zooming (`fn(...)` is zoom-out `(lambda (...) ...)` is zoom-in)
 - other technologies, not directly related, but maybe of interest: 
-	- https://git.sr.ht/~akkartik/pensieve.love 
+	- https://git.sr.ht/!akkartik/pensieve.love 
 	- unrelated, but related: Knotend mouseless flowcharts https://www.youtube.com/watch?v=Y56TwNTxB3w
 		- uses TAB key to snap between nodes (boxes)
 		- various other kbd bindings for inserting nodes

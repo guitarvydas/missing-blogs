@@ -86,7 +86,7 @@ temp=temp${RANDOM}
 # connection
 
 
-cat >${temp}.pl <<'~~~'
+cat >${temp}.pl <<'!!!'
 :- use_module(library(http/json)).
 ?- consult("fb.pl").
 ?- consult("/Users/tarvydas/quicklisp/local-projects/eh/das/das2f/shapes.pl").
@@ -104,8 +104,8 @@ json_write(user_output,Set,[width(128)])
 )
 ;
 json_write(user_output,[],[width(123)]).
-~~~
-cat >${temp}.js <<'~~~'
+!!!
+cat >${temp}.js <<'!!!'
 const fs = require ('fs');
 var rawText = fs.readFileSync ('/dev/fd/0');
 var parameters = JSON.parse(rawText);
@@ -120,7 +120,7 @@ das_fact(sender, ${Edge}, sender{component:"${Sender.component}",port:"${Sender.
 das_fact(receiver, ${Edge}, receiver{component:"${Receiver.component}",port:"${Receiver.port}"}).`);};
 });
   
-~~~
+!!!
 swipl -g "consult(${temp})." -g 'query.' -g 'halt.' | node ${temp}.js
 rm -f ${temp}.pl
 rm -f ${temp}.js
@@ -138,16 +138,16 @@ implicitforall {
   match = line
   ensure = line
 
-  line = ~sharp notNL* nl
+  line = !sharp notNL* nl
 
-  notPAREN = ~"(" ~")" any
+  notPAREN = !"(" !")" any
 
     ident = firstChar restChar*
     firstChar = "A" .. "Z" | "a" .. "z" | "_"
     restChar = "0" .. "9" | firstChar
     nl = "\n"
     sharp = "#"
-    notNL = ~nl any
+    notNL = !nl any
     ws = " " | "\t"
 }
 
@@ -155,10 +155,10 @@ implicitforall {
 
 ### Glue
 ```
-main [ @sharps @ws kquery @ws2 @nl Match @Ensures] = [[${sharps}${ws}~${ws2}${Match}${Ensures}]]
+main [ @sharps @ws kquery @ws2 @nl Match @Ensures] = [[${sharps}${ws}!${ws2}${Match}${Ensures}]]
 
 match [line] = [[${line}]]
-ensure [line] = [[(${line.trim ()}->true ; format(user_error,"querythen failed /${line.trim ()}/~n",[]),abort),\n]]
+ensure [line] = [[(${line.trim ()}->true ; format(user_error,"querythen failed /${line.trim ()}/!n",[]),abort),\n]]
 
 line [@notNL nl] = [[${notNL}${nl}]]
 
@@ -201,7 +201,7 @@ qd3 {
    code = line+
    message = line+
 
-   line = ~sharp notNL* nl
+   line = !sharp notNL* nl
 
    condKW = "cond" ws+ commentToEOL -- withcomment
           | "cond" nl               -- nocomment
@@ -213,18 +213,18 @@ qd3 {
           | "raw" nl                     -- nocomment
 
 
-   commentToEOL = ~sharp notNL* nl
+   commentToEOL = !sharp notNL* nl
 
     nl = "\n"
     sharp = "#"
-    notNL = ~nl any
+    notNL = !nl any
 
     ident = firstChar restChar*
     firstChar = "A" .. "Z" | "a" .. "z" | "_"
     restChar = "0" .. "9" | firstChar
     string = dq notDQ* dq
     dq = "\""
-    notDQ = ~dq any
+    notDQ = !dq any
     ws = " " | "\t"
 }
 
@@ -236,7 +236,7 @@ Main [Name Parameters Imports Query Display]
 temp=temp\${RANDOM}
 ${Name}
 ${Parameters}
-cat >\${temp}.pl <<'~~~'
+cat >\${temp}.pl <<'!!!'
 :- use_module(library(http/json)).
 ?- consult("fb.pl").
 ${Imports.trim ()}
@@ -249,8 +249,8 @@ json_write(user_output,Set,[width(128)])
 )
 ;
 json_write(user_output,[],[width(123)]).
-~~~
-cat >\${temp}.js <<'~~~'
+!!!
+cat >\${temp}.js <<'!!!'
 const fs = require ('fs');
 var rawText = fs.readFileSync ('/dev/fd/0');
 var parameters = JSON.parse(rawText);
@@ -259,7 +259,7 @@ parameters.forEach (p => {
   ${support.formatConditionalDisplays ()};
 });
   ${support.formatFinalDisplays ()}
-~~~
+!!!
 swipl -g "consult(\${temp})." -g 'query.' -g 'halt.' | node \${temp}.js
 rm -f \${temp}.pl
 rm -f \${temp}.js

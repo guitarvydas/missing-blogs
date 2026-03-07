@@ -69,8 +69,8 @@ Note: every parameter is tree-walked, regardless of whether the result is used o
                | newline? end -- withoutContent
     indent = indentChar+
     indentChar = ("#" | "*")
-    toIndent = ~indentChar any
-    toEOL = ~newline any
+    toIndent = !indentChar any
+    toEOL = !newline any
 
     newline = "\n"
     spc = " "
@@ -161,8 +161,8 @@ const grammar = ohm.grammar(String.raw`
                | newline? end -- withoutContent
     indent = indentChar+
     indentChar = ("#" | "*")
-    toIndent = ~indentChar any
-    toEOL = ~newline any
+    toIndent = !indentChar any
+    toEOL = !newline any
 
     newline = "\n"
     spc = " "

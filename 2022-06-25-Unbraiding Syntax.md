@@ -39,11 +39,11 @@ function f (...) {
 ```
 
 Would be written in diagram form as:
-!![globals-freevariable.png](globals-freevariable.png)
+![globals-freevariable.png](globals-freevariable.png)
 
 Upon seeing this, we would be compelled to rewrite it as:
 
-!![globals-boundvariable.png](globals-boundvariable.png)
+![globals-boundvariable.png](globals-boundvariable.png)
 
 Which immediately wraps a *scope* around the global variable `x` and makes it obvious, to the reader, what the scope of `x` is and where it can be used.
 
@@ -78,7 +78,7 @@ Devising a syntax for conditionals, e.g. `if`, is straight-forward as a technica
 
 E.G.
 
-!![ifthenelse.png](ifthenelse.png)
+![ifthenelse.png](ifthenelse.png)
 
 This technical diagram can be compiled to an executable program, but, if one insists on using ASCII Art to represent the diagram, we get
 
@@ -127,18 +127,18 @@ Statement =
   | Other
 IfThenElse = "if" Box Box Box?
 Other = OtherChar+
-OtherChar = ~separator any
+OtherChar = !separator any
 separator = "{" | "}" | "(" | ")"
-comment = "//" (~newline any)* newline
+comment = "//" (!newline any)* newline
 newline = "\n"
 space += comment
 }
 ```
 
 This grammar parses both cases, if-then and if-then-else
-!![t1.png](t1.png)
-!![t2.png](t2.png)
-!![t3.png](t3.png)
+![t1.png](t1.png)
+![t2.png](t2.png)
+![t3.png](t3.png)
 
 # Readability
 A problem arises when the ASCII Art form is made "more readable".
@@ -218,7 +218,7 @@ is an *if-then* statement followed by a *compound statement*.
 # Transpiling Human Readable Syntax to Machine Readable Syntax
 The screenshot below shows a quickie grammar for recognizing human-readable if-else statements.  The code for a full transpiler follows.  This screenshot uses the Ohm-JS Ohm-editor...
 
-!![t4.png](t4.png)
+![t4.png](t4.png)
 
 ## Transpiler Example Code
 This code runs in a browser and uses Ohm-JS for parsing.
@@ -275,7 +275,7 @@ Statement =
 Block = "{" Statement Block? "}"
 Expression = Other
 Other = OtherChar+
-OtherChar = ~separator any
+OtherChar = !separator any
 separator = "{" | "}" | "(" | ")"
 }
 
@@ -287,9 +287,9 @@ Statement =
   | Other
 IfThenElse = "if" Box Box Box?
 Other = OtherChar+
-OtherChar = ~separator any
+OtherChar = !separator any
 separator = "{" | "}" | "(" | ")"
-comment = "//" (~newline any)* newline
+comment = "//" (!newline any)* newline
 newline = "\n"
 space += comment
 }

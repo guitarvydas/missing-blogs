@@ -6,7 +6,7 @@
 5. def-proto
 6. def-synonym
 7. def-kind
-8. *like* `~`
+8. *like* `!`
 9. initializer `=`
 10. parameters for instantiation `[...]`
 11. reference to operation `&`

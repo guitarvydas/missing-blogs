@@ -1,5 +1,5 @@
 # 2023-08-08-Two Dimensions of Program Composition
-!![Excalidraw/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg](images/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg)
+![Excalidraw/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg](images/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg)
 
 
 The notion of ISA is too restrictive in my opinion. https://en.wikipedia.org/wiki/Instruction_set_architecture

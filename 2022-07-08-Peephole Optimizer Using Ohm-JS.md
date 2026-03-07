@@ -152,18 +152,18 @@ peephole =
 AtFunctionCall = "." "at" "(" Arg* ")"
 Arg = 
   | "(" Arg* ")"  -- nested
-  | ~"(" ~")" any -- basic
+  | !"(" !")" any -- basic
 }
 
 ```
 ---
 Peephole Optimizer Reformatter
 ```
-top [@peephole] = ⟦⟦~{peephole}⟧⟧
-peephole [x] = ⟦⟦~{x}⟧⟧
-AtFunctionCall [kdot kat klp @Args krp] = ⟦⟦\[~{Args}\] ⟧⟧
-Arg_nested [klp @Args krp] = ⟦⟦~{klp}~{Args}~{krp}⟧⟧
-Arg_basic [c] = ⟦⟦~{c}⟧⟧
+top [@peephole] = ⟦⟦!{peephole}⟧⟧
+peephole [x] = ⟦⟦!{x}⟧⟧
+AtFunctionCall [kdot kat klp @Args krp] = ⟦⟦\[!{Args}\] ⟧⟧
+Arg_nested [klp @Args krp] = ⟦⟦!{klp}!{Args}!{krp}⟧⟧
+Arg_basic [c] = ⟦⟦!{c}⟧⟧
 ```
 
 ---

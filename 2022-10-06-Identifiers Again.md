@@ -43,8 +43,8 @@ namestringcontainingspaces =
   | "❲" namestringcontainingspaces "❳"
   | notbracket+
 
-notbracketnotspace =  ~space ~"❲" ~"❳" ~"⎟" escapedChar
-notbracket =  ~"❲" ~"❳" ~"⎟" escapedChar
+notbracketnotspace =  !space !"❲" !"❳" !"⎟" escapedChar
+notbracket =  !"❲" !"❳" !"⎟" escapedChar
 
 escapedChar = 
   | "\" any

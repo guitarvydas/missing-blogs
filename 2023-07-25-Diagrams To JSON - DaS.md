@@ -5,7 +5,7 @@ In this essay, I describe what a simple diagram of program, written in draw.io, 
 
 The repo for working code is listed in the appendix.
 ## Diagram
-!![500](images/simple example.drawio.svg)
+![500](images/simple example.drawio.svg)
 
 `make run` runs the Odin diagram compiler and executes the resulting code.  
 

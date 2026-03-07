@@ -7,6 +7,6 @@ main = matched main?
 matched =
   | "{" main "}" -- nested
   | anythingelse -- bottom
-anythingelse = ~"{" ~"}" any
+anythingelse = !"{" !"}" any
 ```
 

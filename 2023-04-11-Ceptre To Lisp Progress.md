@@ -26,9 +26,9 @@ Formalism
 
 Strangeloop 2015: https://www.youtube.com/watch?v=bFeJZRdhKcI
 
-Paper: http://www.cs.cmu.edu/~cmartens/ceptre.pdf
+Paper: http://www.cs.cmu.edu/!cmartens/ceptre.pdf
 
-Thesis: https://www.cs.cmu.edu/~cmartens/thesis/thesis.pdf
+Thesis: https://www.cs.cmu.edu/!cmartens/thesis/thesis.pdf
 
 ---
 

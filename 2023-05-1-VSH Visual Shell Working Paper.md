@@ -11,7 +11,7 @@ In the original...
 2. The diagram compiler was written as 8 lumps of PROLOG and one lump of Lisp that preprocesses the XML diagram format (.graphml) into a form that is compatible with PROLOG (.pl).  Later, all of the PROLOG code was replaced by Lisp imperative code to show that the use of PROLOG was not a vital part of the solution.
 3. The .gsh interpreter was written in C and translates 8 simple instructions into UNIX system calls, such as `execv()`, `dup2()`, etc.  The C program was called *grash*.
 
-!![Excalidraw/2023-05-1-VSH Visual Shell Working Paper 2023-05-01 05.36.15.excalidraw.png](images/2023-05-1-VSH Visual Shell Working Paper 2023-05-01 05.36.15.excalidraw.png)
+![Excalidraw/2023-05-1-VSH Visual Shell Working Paper 2023-05-01 05.36.15.excalidraw.png](images/2023-05-1-VSH Visual Shell Working Paper 2023-05-01 05.36.15.excalidraw.png)
 
 
 ## Moving Forward into Odin0D
@@ -34,7 +34,7 @@ Rewrite all components in Odin, replacing Lisp and PROLOG.
 ## May 1, 2023 - Update
 
 In Vsh, the name of a component is a UNIX/Linux command that takes input from stdin and outputs to stdout.  The command must be found on $PATH.
-!![Diagram-Compiler-As-A-Compilable-Diagram.jpg](Diagram-Compiler-As-A-Compilable-Diagram.jpg)
+![Diagram-Compiler-As-A-Compilable-Diagram.jpg](Diagram-Compiler-As-A-Compilable-Diagram.jpg)
 
 ## Usage
 ### build grash interpreter
@@ -43,7 +43,7 @@ $ make
 ### build commands from .pl (executables built from PROLOG source using gplc)
 ### and run commands to build fb9.gsh (vsh compiler as .gsh)
 $ cd ../pl_vsh
-$ mkdir ~/bin
+$ mkdir !/bin
 $ ./grun
 #### build scanner for .graphml to .pro (executable built from Lisp source using SBLC ; tweaked to generate PROLOG facts in factbase)
 $ make
@@ -52,7 +52,7 @@ $ ./run
 
 ### sketch
 
-!![Excalidraw/2023-05-1-VSH Visual Shell Working Paper 2023-05-01 22.58.37.excalidraw.png](images/2023-05-1-VSH Visual Shell Working Paper 2023-05-01 22.58.37.excalidraw.png)
+![Excalidraw/2023-05-1-VSH Visual Shell Working Paper 2023-05-01 22.58.37.excalidraw.png](images/2023-05-1-VSH Visual Shell Working Paper 2023-05-01 22.58.37.excalidraw.png)
 
 
 ## Update 2023-05-02

@@ -6,7 +6,7 @@ copied_to_pages: "true"
 # Message Passing
 Message Passing uses FIFOs (queues), CALL/RETURN uses LIFOs (stack).
 
-!![Message Passing vs CALL RETURN.png](images/Message Passing vs CALL RETURN.png)
+![Message Passing vs CALL RETURN.png](images/Message Passing vs CALL RETURN.png)
 
 
 ## The State Explosion Problem
@@ -20,18 +20,18 @@ Example: imagine a simple table lamp with 2 push-buttons
 
 ## Example
 ### Lamp
-!![wip-original/attic/state explosion-Lamp.png](images/state explosion-Lamp.png)
+![wip-original/attic/state explosion-Lamp.png](images/state explosion-Lamp.png)
 
 
 ### State Explosion
 
-!![wip-original/attic/state explosion-State Explosion.png](images/state explosion-State Explosion.png)
+![wip-original/attic/state explosion-State Explosion.png](images/state explosion-State Explosion.png)
 
 The *state explosion* problem becomes more severe in more complicated software architectures.
 
 ### Layering - HSM - Hierarchical State Machine
 
-!![wip-original/attic/state explosion-HSM - Hierarchical State Machine.png](images/state explosion-HSM - Hierarchical State Machine.png)
+![wip-original/attic/state explosion-HSM - Hierarchical State Machine.png](images/state explosion-HSM - Hierarchical State Machine.png)
 
 Originally suggested by Harel in StateCharts paper.
 
@@ -40,7 +40,7 @@ Concurrency is moved to a separate notation. "Concurrency" is called "orthogonal
 
 
 # Structured Message Passing
-!![structured message passing.png](images/structured message passing.png)
+![structured message passing.png](images/structured message passing.png)
 
 Message passing is structured in a layered/hierarchical manner.
 
@@ -64,12 +64,12 @@ All Components are constructed in a 0D - zero dependency - manner.  0D Component
 # Message Passing
 Message Passing uses FIFOs (queues), CALL/RETURN uses LIFOs (stack).
 
-!![Message Passing vs CALL RETURN.png](images/Message Passing vs CALL RETURN.png)
+![Message Passing vs CALL RETURN.png](images/Message Passing vs CALL RETURN.png)
 
 ---
 
 ## Structured Message Passing
-!![structured message passing.png](images/structured message passing.png)
+![structured message passing.png](images/structured message passing.png)
 
 ---
 

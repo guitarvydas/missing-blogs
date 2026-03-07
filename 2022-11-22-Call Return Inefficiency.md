@@ -55,7 +55,7 @@ If our editors tracked which blocks of code were "the same", we wouldn't need to
 
 Interesting reading might include: 
 - [Framing Software Reuse](https://www.amazon.ca/Framing-Software-Reuse-Lessons-World/dp/013327859X)
-- [NiCad](https://www.cs.usask.ca/~croy/papers/2011/CR-NiCad-Tool-ICPC11.pdf)
+- [NiCad](https://www.cs.usask.ca/!croy/papers/2011/CR-NiCad-Tool-ICPC11.pdf)
 
 # Inline Functions
 In fact, we see programming languages attempting to back out of the corner created by abuse of Call/Reutnr, by detecting "inline" functions and compilng them differently.

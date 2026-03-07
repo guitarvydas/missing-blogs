@@ -15,7 +15,7 @@ The data structures for control flow are distinct from the data structures for d
 
 # Taxonomy For Control Flow - Topmost Layer
 
-!![routines.png](routines.png)
+![routines.png](routines.png)
 The programming community has tried building applications using only the left-hand-side of the above taxonomy.
 
 Functions are calculators - they accept a block of synchronous parameters and always produce a block of synchronous outputs.
@@ -31,8 +31,8 @@ Worse, programmers use languages designed for synchronous programming to write p
 Various language designs have tried to escape the synchronous paradigm, but are pervasively synchronous under-the-hood.  Javascript callbacks are an example of square pegs being forced into round holes.
 
 # Taxonomy for Control Flow - More Detail
-!![syncasyncprogramming.png](syncasyncprogramming.png)
+![syncasyncprogramming.png](syncasyncprogramming.png)
 # Notes
-!![syncasyncprogramming-layernotes.png](syncasyncprogramming-layernotes.png)
+![syncasyncprogramming-layernotes.png](syncasyncprogramming-layernotes.png)
 # Syntax
-!![syncasync-syntax.png](syncasync-syntax.png)
+![syncasync-syntax.png](syncasync-syntax.png)

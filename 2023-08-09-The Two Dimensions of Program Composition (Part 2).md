@@ -1,12 +1,12 @@
 # 2023-08-09-The Two Dimensions of Program Composition (Part 2)
 
-!![Excalidraw/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg](images/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg)
+![Excalidraw/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg](images/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg)
 
 *[This note is an addendum to 
 ## 2023-08-08-Two Dimensions of Program Composition
 
 
-!![Excalidraw/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg](images/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg)
+![Excalidraw/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg](images/2023-08-08-Two Dimensions of Program Composition 2023-08-08 06.57.56.excalidraw.svg)
 
 
 The notion of ISA is too restrictive in my opinion. https://en.wikipedia.org/wiki/Instruction_set_architecture
@@ -149,7 +149,7 @@ It is not necessary to resort to using a complex notation to perform step 2. It 
 This approach - treating single-threading and multi-threading in an orthogonal manner - can be extended in a "structured" manner.  We already know, from bitter experience, that strongly-connected networks of message-passing nodes becomes unmaintainable ("spaghetti code") as they grow.  This is, also, known as the "state explosion problem".  
 
 Solutions to the state explosion problem abound, for example:
-- YACC https://en.wikipedia.org/wiki/Yacc#:~:text=Yacc%20(Yet%20Another%20Compiler%2DCompiler,Johnson.
+- YACC https://en.wikipedia.org/wiki/Yacc#:!:text=Yacc%20(Yet%20Another%20Compiler%2DCompiler,Johnson.
 - Harel StateCharts https://guitarvydas.github.io/2020/12/09/StateCharts.html
 - various hardware techniques developed in the 1960s.
 
@@ -167,7 +167,7 @@ Structured Message Passing is, simply, any kind of organization applied to syste
 
 # Appendix Harel's StateChart Paper
 
- https://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf
+ https://www.wisdom.weizmann.ac.il/!harel/papers/Statecharts.pdf
 
 # Appendix Structured Message Passing
 

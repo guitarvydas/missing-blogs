@@ -13,7 +13,7 @@ A *process* is a piece of code that is a State Machine, with two States:
 1. running
 2. blocked.
 
-!![Excalidraw/Drawing 2023-04-28 19.02.18.excalidraw.png](images/Drawing 2023-04-28 19.02.18.excalidraw.png)
+![Excalidraw/Drawing 2023-04-28 19.02.18.excalidraw.png](images/Drawing 2023-04-28 19.02.18.excalidraw.png)
 
 The *blocked* State is only an optimization.  The process *could* enter into a busy-wait loop, burning CPU cycles continuously polling for something to happen.  The optimization is to chop the process into two parts
 1. code to run immediately, until the process becomes *blocked*
@@ -23,12 +23,12 @@ This optimization allows the Scheduler to use the otherwise-wasted CPU cycles to
 
 ## Blocking and Unblocking
 
-!![Excalidraw/2023-04-28-Condition Wait and Signal 2023-04-28 19.21.13.excalidraw.png](images/2023-04-28-Condition Wait and Signal 2023-04-28 19.21.13.excalidraw.png)
+![Excalidraw/2023-04-28-Condition Wait and Signal 2023-04-28 19.21.13.excalidraw.png](images/2023-04-28-Condition Wait and Signal 2023-04-28 19.21.13.excalidraw.png)
 
 
 ## Condition Queue
 
-!![Excalidraw/2023-04-28-Condition Wait and Signal 2023-04-28 19.09.59.excalidraw.png](images/2023-04-28-Condition Wait and Signal 2023-04-28 19.09.59.excalidraw.png)
+![Excalidraw/2023-04-28-Condition Wait and Signal 2023-04-28 19.09.59.excalidraw.png](images/2023-04-28-Condition Wait and Signal 2023-04-28 19.09.59.excalidraw.png)
 
 
 ## Wait(...)
@@ -52,4 +52,4 @@ The sub-process does the I/O, then it calls Signal to wake up the waiting proces
 
 ## The Dispatcher
 
-!![Excalidraw/2023-04-28-Condition Wait and Signal 2023-04-28 22.08.49.excalidraw.png](images/2023-04-28-Condition Wait and Signal 2023-04-28 22.08.49.excalidraw.png)
+![Excalidraw/2023-04-28-Condition Wait and Signal 2023-04-28 22.08.49.excalidraw.png](images/2023-04-28-Condition Wait and Signal 2023-04-28 22.08.49.excalidraw.png)

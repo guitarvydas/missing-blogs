@@ -52,7 +52,7 @@ This arrangement is much like wrapping *lambda*s around blocks of code in textua
 
 At some point, the nesting becomes too deep to be visually useful.  At that point, an off-page-connector-like notation is needed.  In the example diagram below, I used squares to represent synchronous ports and dotted outlines to represent boxes that "are implemented elsewhere".  This particular drawing shows the main set of boxes plus the "implemented elsewhere" boxes ("deliver input from Container input to Child input" and "deliver input from Container input to me output").
 
-!![wip-original/attic/hamburgerworkbenchD0D/handling.png](handling.png)
+![wip-original/attic/hamburgerworkbenchD0D/handling.png](handling.png)
 ### Nested Diagram As Text
 Note that the text form of the diagram is not meant for human consumption.
 
@@ -109,7 +109,7 @@ Harel's notation solved the "state explosion problem".
 
 A simple diagram of a state machine is shown below...
 
-!![wip-original/attic/app-state-diagram.png](app-state-diagram.png)
+![wip-original/attic/app-state-diagram.png](app-state-diagram.png)
 The above diagram shows states as ellipses with solid outlines.
 
 State names are preceded by one octothorpe `#`.
@@ -142,7 +142,7 @@ This diagram contains two constructs not specified by the Drakon synax:
 
 These minor additions made it easier to transpile the diagrams into textual form.
 
-!![wip-original/attic/Papers/step.png](step.png)
+![wip-original/attic/Papers/step.png](step.png)
 ### Drakon Diagram As Text
 ```
 flowchart Try-component {
@@ -196,7 +196,7 @@ Container components contain other components (Leaf or Container) and route mess
 
 Further details (like fan-in, fan-out, Signatures, Implementations, etc., are discussed elsewhere).
 
-!![wip-original/attic/hamburgerworkbenchD0D/testbench.png](testbench.png)
+![wip-original/attic/hamburgerworkbenchD0D/testbench.png](testbench.png)
 ## FBP
 [FBP](http://www.jpaulmorrison.com/fbp/fbp2.htm) describes a notation plus visualization of asynchronous components similar to the above.
 # Syntax That Doesn't Work
@@ -268,10 +268,10 @@ Goal:
 ### Screenshot Hamburger Workbench
 
 Hamburger Workbench On Load
-!![wip-original/attic/hamburgerworkbenchD0D/hD0D1.png](hD0D1.png)
+![wip-original/attic/hamburgerworkbenchD0D/hD0D1.png](hD0D1.png)
 
 Hamburger Workbench After Clicking Button
-!![wip-original/attic/hamburgerworkbenchD0D/hD0D2.png](hD0D2.png)
+![wip-original/attic/hamburgerworkbenchD0D/hD0D2.png](hD0D2.png)
 
 
 
@@ -283,7 +283,7 @@ Note: the diagrams below were created using draw.io, but, any convenient-to-use 
 
 ### Diagram The Workbench
 
-!![wip-original/attic/hamburgerworkbenchD0D/testbench.png](testbench.png)
+![wip-original/attic/hamburgerworkbenchD0D/testbench.png](testbench.png)
 The rounded boxes represent *concurrent* software components.
 
 The green circles represent *input ports*.
@@ -325,7 +325,7 @@ Note the use of fan-out, where two output ports are coalesced into a single outp
 
 ### Diagram The Workbench With Probes
 
-!![wip-original/attic/hamburgerworkbenchD0D/testbenchdb.png](testbenchdb.png)
+![wip-original/attic/hamburgerworkbenchD0D/testbenchdb.png](testbenchdb.png)
 
 Here, I've added "probe" components to observe messages as they travel along the connections.
 
@@ -337,7 +337,7 @@ In this example, though, for simplicity, I've created unique "probe" components 
 
 ### Diagram Step
 
-!![wip-original/attic/hamburgerworkbenchD0D/step.png](step.png)
+![wip-original/attic/hamburgerworkbenchD0D/step.png](step.png)
 
 The control flow that implements the step-wise operation of Container components can be written in a numbe of ways.  I chose to draw a Drakon diagram, for variety, in this POC.
 
@@ -390,7 +390,7 @@ keyword = (
   | "yes"
   | "no"
   | "_"
-  ) ~namecharRest
+  ) !namecharRest
 
 bracket = "{" | "}" | "(" | ")" | "[" | "]"
 separator = ":" | ">>" | ">" | "/" | bracket
@@ -399,16 +399,16 @@ LabelDef = Label
 LabelRef = Label
 Label = name "/" number
 
-MethodRef = name ~"/"
+MethodRef = name !"/"
 
 name
   = "_"        -- trigger
   | namestring -- name 
 namestring = namecharFirst namecharRest*
-namecharFirst = ~keyword namechar 
-namecharRest = ~keyword namechar
+namecharFirst = !keyword namechar 
+namecharRest = !keyword namechar
 
-namechar = ~space ~separator any
+namechar = !space !separator any
 
 number = digit+
 
@@ -416,10 +416,10 @@ space
  += comment
 
 comment
-  = "//" (~"\n" any)* "\n"  -- singleLine
-  | "/*" (~"*/" any)* "*/"  -- multiLine
+  = "//" (!"\n" any)* "\n"  -- singleLine
+  | "/*" (!"*/" any)* "*/"  -- multiLine
 
-string = dq (~dq any)* dq
+string = dq (!dq any)* dq
 dq = "\""
 
 Value = name | number
@@ -529,7 +529,7 @@ step.js: step.drakon $(DRAKON) $(IDRAKON)
 flowchart.bash
 ```
 #!/bin/bash
-prep=~/tools/pre/pre
+prep=!/tools/pre/pre
 cdir=`pwd`
 ${prep} '.' '$' flowchart.ohm flowchart.fmt --stop=1 --support=${cdir}/support.js
 ```
@@ -539,7 +539,7 @@ ${prep} '.' '$' flowchart.ohm flowchart.fmt --stop=1 --support=${cdir}/support.j
 
 
 
-!![wip-original/attic/hamburgerworkbenchD0D/handling.png](handling.png)
+![wip-original/attic/hamburgerworkbenchD0D/handling.png](handling.png)
 
 
 The *handler* code is part of the Cos (component O/S) code.  
@@ -686,7 +686,7 @@ NameList
     | eol
 
 keyword
-  = &(~namecharFirst)
+  = &(!namecharFirst)
           ( "implementation"
           | "messages"
           | "orelse"
@@ -714,26 +714,26 @@ keyword
           | "of"
           | "me"
           | "X") 
-   &(~namecharRest)
+   &(!namecharRest)
 
-kwME = &(~namecharFirst) "me" &(~namecharRest)
-kwPORT = &(~namecharFirst) "port" &(~namecharRest)
+kwME = &(!namecharFirst) "me" &(!namecharRest)
+kwPORT = &(!namecharFirst) "port" &(!namecharRest)
 
-string = dq (~dq any)* dq
+string = dq (!dq any)* dq
 dq = "\""
     
 eol = "\n"
 
 name = namecharFirst namecharRest*
-namecharFirst = ~separator ~keyword ("_" | "A" .. "Z" | "a" .. "z")
-namecharRest = ~separator ~keyword ("_" | "A" .. "Z" | "a" .. "z" | "0" .. "9")
+namecharFirst = !separator !keyword ("_" | "A" .. "Z" | "a" .. "z")
+namecharRest = !separator !keyword ("_" | "A" .. "Z" | "a" .. "z" | "0" .. "9")
 
 space
  += comment
 
 comment
-  = "//" (~"\n" any)* "\n"  -- singleLine
-  | "/*" (~"*/" any)* "*/"  -- multiLine
+  = "//" (!"\n" any)* "\n"  -- singleLine
+  | "/*" (!"*/" any)* "*/"  -- multiLine
 
 }
 ```
@@ -878,7 +878,7 @@ handling.js: handling.das $(DIA) $(IDIA)
 dev.bash
 ```
 #!/bin/bash
-prep=~/tools/pre/pre
+prep=!/tools/pre/pre
 cdir=`pwd`
 ${prep} '.' '$' dia.ohm dia.fmt --stop=1 --support=${cdir}/support.js
 ```
@@ -909,27 +909,27 @@ implementation deliverInputMessageToAllChildrenOfSelf (message)
 
 ### Diagram Routing
 
-!![wip-original/attic/hamburgerworkbenchD0D/handling.png](handling.png)
+![wip-original/attic/hamburgerworkbenchD0D/handling.png](handling.png)
 
 
 
 ### Diagram Find Connection
 
 
-!![wip-original/attic/hamburgerworkbenchD0D/findconnection.png](findconnection.png)
+![wip-original/attic/hamburgerworkbenchD0D/findconnection.png](findconnection.png)
 
 
 
 ### Diagrams Data Structures
 
 ## Components
-!![wip-original/attic/hamburgerworkbenchD0D/json2generic-components.png](json2generic-components.png)
+![wip-original/attic/hamburgerworkbenchD0D/json2generic-components.png](json2generic-components.png)
 
 ## Messages
-!![wip-original/attic/hamburgerworkbenchD0D/json2generic-message.png](json2generic-message.png)
+![wip-original/attic/hamburgerworkbenchD0D/json2generic-message.png](json2generic-message.png)
 
 ## Queues
-!![wip-original/attic/hamburgerworkbenchD0D/json2generic-queue.png](json2generic-queue.png)
+![wip-original/attic/hamburgerworkbenchD0D/json2generic-queue.png](json2generic-queue.png)
 
 ## Transpiled JSON
 
@@ -1062,7 +1062,7 @@ echo
 
 ### Phrase Faker Walkthrough
 
-!![wip-original/attic/hamburgerworkbenchD0D/walkthroughs-leaf-phrase-faker.png](walkthroughs-leaf-phrase-faker.png)
+![wip-original/attic/hamburgerworkbenchD0D/walkthroughs-leaf-phrase-faker.png](walkthroughs-leaf-phrase-faker.png)
 
 ```
   [
@@ -1090,7 +1090,7 @@ echo
 
 ### Test Bench Walkthrough
 
-!![wip-original/attic/hamburgerworkbenchD0D/walkthroughs-container-testbench.png](walkthroughs-container-testbench.png)
+![wip-original/attic/hamburgerworkbenchD0D/walkthroughs-container-testbench.png](walkthroughs-container-testbench.png)
 ```
   [
     {

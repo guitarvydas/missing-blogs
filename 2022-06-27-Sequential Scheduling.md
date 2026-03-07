@@ -9,8 +9,8 @@ Note implicit sequence based on ordering of the lines of text
 
 # Explicit Sequencing
 ## Basic
-!![sequential-basic.png](sequential-basic.png)
+![sequential-basic.png](sequential-basic.png)
 
 ## Layout Changed
 
-!![sequential-changedlayout.png](sequential-changedlayout.png)
+![sequential-changedlayout.png](sequential-changedlayout.png)

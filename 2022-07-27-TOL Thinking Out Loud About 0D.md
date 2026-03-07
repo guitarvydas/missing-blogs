@@ -114,18 +114,18 @@ In Structured programming - functional programming - what we get is t
 
 What we want in distributed programming is zero or more outputs that are routed to different places, maybe the caller, or maybe other places. At the moment - in functional programming - we usethe derisive term "side effect". But, that's not really what's going on here and that's not the way we structure internet solutions.
 
-!![design rules-function in dynamic language.png](images/design rules-function in dynamic language.png)
+![design rules-function in dynamic language.png](images/design rules-function in dynamic language.png)
 
 ## Structured Message Passing Part 2
 So what's the first step in converting from the way we program in what I call zero D - which is zero dependency?
 
 The number one thing is to understand what we're doing. I've used a dynamic language and I've written a function called transpile. It takes input and it produces output and there's nothing that checks the input and nothing that checks the output.
 
-!![design rules-function in dynamic language.png](images/design rules-function in dynamic language.png)
+![design rules-function in dynamic language.png](images/design rules-function in dynamic language.png)
 
 We already know how to handle that problem. We do it in websites and we call it input validation. At least for one side.
 
-!![design rules-website.png](images/design rules-website.png)
+![design rules-website.png](images/design rules-website.png)
 
 So we get stuff in. We don't know what it is. It could be anything from the user. We validate it. If it's okay, then we call the function to handle it.  We extend the idea further. Then we want input validation and output validation. That's kind of what we're doing with the static languages and type checkers. Except that we're also imposing the synchronous constraint on the way thatwe write code in those kinds of languages.
 
@@ -133,7 +133,7 @@ We want to break that constraint.
 
 The model that I'm looking at is 
 
-!![design rules-IO validation.png](images/design rules-IO validation.png)
+![design rules-IO validation.png](images/design rules-IO validation.png)
 
 we get some input into a component. The component validates the input. And it either passes it on to the function or it declares some kind of error saying that the input was invalid. When the function is done, we grab its output and we run through another validator. And the same thing, we either pass the result on, or we say the output was invalid.
 
@@ -143,7 +143,7 @@ We simply chop up the previous diagram into separate components and w
 
 And each one of them has separate ports.
 
-!![design rules-Type Checking Pipeline.png](images/design rules-Type Checking Pipeline.png)
+![design rules-Type Checking Pipeline.png](images/design rules-Type Checking Pipeline.png)
 
 ## Aside: Design Rules Are More Powerful Than Type Checking
 What I haven't said so far is that design rules can actually be morepowerful than type checking.
@@ -155,7 +155,7 @@ Whereas, with design rules, you can program up a check to validate i
 
 Now the problem becomes slightly simpler. We just look at the transpile function and ask ourselves, how can we make it work more like a component that has one input and one output.
 
-!![design rules-Copy of Type Checking Pipeline.png](images/design rules-Copy of Type Checking Pipeline.png)
+![design rules-Copy of Type Checking Pipeline.png](images/design rules-Copy of Type Checking Pipeline.png)
 
 In this particular piece of code, what we have is one input, which comes in as a block and then is destructured into four parameters,but the returns come in different places. And they use the hardware supported  global variable  call stack and we need to breakthat.
 

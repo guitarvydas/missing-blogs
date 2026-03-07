@@ -116,7 +116,7 @@ But, I chose not to implement *history* in this example, to keep things simple.
 ---
 # Top Level Lamp
 
-!![hsm-Lamp 0.png](images/hsm-Lamp 0.png)
+![hsm-Lamp 0.png](images/hsm-Lamp 0.png)
 
 The Lamp has 3 toggle buttons
 1. power (pwr) "on" and "off"
@@ -124,7 +124,7 @@ The Lamp has 3 toggle buttons
 3. color "yellow", "green", "red" (3rd press goes back to "yellow")
 ---
 # Flat Diagram
-!![hsm-Lamp.png](hsm-Lamp.png)
+![hsm-Lamp.png](hsm-Lamp.png)
 
 This diagram reads from Left to Right.
 
@@ -142,7 +142,7 @@ The 3 "colour" sub-machines are similar to one another.  We would like to have a
 ---
 # Collapsed Diagram
 
-!![hsm-Lamp 2.png](images/hsm-Lamp 2.png)
+![hsm-Lamp 2.png](images/hsm-Lamp 2.png)
 
 The above essay discusses the design of the Lamp example used here.
 
@@ -151,7 +151,7 @@ I will not discuss the design here, but will use one of the diagrams from that e
 ---
 
 # Diagram
-!![hsm-Lamp.png](hsm-Lamp.png)
+![hsm-Lamp.png](hsm-Lamp.png)
 
 ---
 
@@ -220,7 +220,7 @@ The child state is built up by child submachines (if any) and is only accessed b
 
 Each submachine places an *exit* function into its state.  The Parent doesn't need to know any details about the Child's state, other than the fact that it can call the Child's *exit* function.
 
-In the pseudo-code, per-instance fields are stored in the `.env` field of the `~` parameter.
+In the pseudo-code, per-instance fields are stored in the `.env` field of the `!` parameter.
 
 Fields that contain shareable code:
 - enter (function)
@@ -249,7 +249,7 @@ Each *state* is represented by a function that handles all messages when the mac
 # Asynchronous vs Synchronous
 FIFOs vs LIFOs
 
-!![containers-20220731.png](containers-20220731.png)
+![containers-20220731.png](containers-20220731.png)
 
 [Aside: Asynchronous operation is facilitated by using FIFOs (queues) instead of LIFOs (stacks)]
 
@@ -257,14 +257,14 @@ FIFOs vs LIFOs
 # Asynchronous vs Synchronous
 Multiple Outputs
 
-!![containers-20220731-multiple outputs.png](images/containers-20220731-multiple outputs.png)
+![containers-20220731-multiple outputs.png](images/containers-20220731-multiple outputs.png)
 
 ---
 
 # Asynchronous vs Synchronous
 Multiple Inputs
 
-!![containers-20220731-multiple inputs.png](images/containers-20220731-multiple inputs.png)
+![containers-20220731-multiple inputs.png](images/containers-20220731-multiple inputs.png)
 
 ---
 
@@ -303,23 +303,23 @@ Machines and States have *exit* functions.  It must be ensured that the State is
 # Manual Single-Step
 
 ```
-machine Lamp = λ(~).{
-  ~.env = { inq: ∅, outq: ∅ }
-  ~.state_OFF = λ(message, e).{
-    cond { (message.port == 'pwr') { ~.next ('ON', e) } }
+machine Lamp = λ(!).{
+  !.env = { inq: ∅, outq: ∅ }
+  !.state_OFF = λ(message, e).{
+    cond { (message.port == 'pwr') { !.next ('ON', e) } }
   }
-  ~.state_ON = λ(message, e).{
-    cond { (message.port == 'pwr') { ~.next ('ON', e) }
+  !.state_ON = λ(message, e).{
+    cond { (message.port == 'pwr') { !.next ('ON', e) }
     else { delegate brightness (e.child) }
     }
   }
-  ~.states = [~.state_OFF, ~.state_ON]
-  ~.enter = λ(e).{ e.state <- ~.state_OFF ; e.child <- ∅ }
-  ~.exit = λ(e).{ exit brightness (e.child) ; e.child <- ∅ }
-  return ~
+  !.states = [!.state_OFF, !.state_ON]
+  !.enter = λ(e).{ e.state <- !.state_OFF ; e.child <- ∅ }
+  !.exit = λ(e).{ exit brightness (e.child) ; e.child <- ∅ }
+  return !
   }
 
---> lampInstance.enter () == λ(e).{ e.state <- ~.state_OFF ; e.child <- ∅ } (lampInstance)
+--> lampInstance.enter () == λ(e).{ e.state <- !.state_OFF ; e.child <- ∅ } (lampInstance)
   -->1
     lampInstance.state = Lamp.state_Off
     lampInstance.child = ∅
@@ -335,33 +335,33 @@ lampInstance.runToCompletion ()
 --> lampInstance.step (m)
   --> m = lampInstance.inq.dequeue ()
   --> lampInstance.handle (m, lampInstance)
-  [ 'OFF', ~.state_OFF ]
-    -->   ~.state_OFF = λ(M ('pwr', True, ∅), lampInstance).{
-            cond { (message.port == 'pwr') { ~.next ('ON', lampInstance) } }
+  [ 'OFF', !.state_OFF ]
+    -->   !.state_OFF = λ(M ('pwr', True, ∅), lampInstance).{
+            cond { (message.port == 'pwr') { !.next ('ON', lampInstance) } }
           }
-      --> { ~.next (~.state_ON, lampInstance) }
-	function next (~.state_ON, lampInstance) {
+      --> { !.next (!.state_ON, lampInstance) }
+	function next (!.state_ON, lampInstance) {
 	  if (lampInstance.child) { exit lampInstance.child.state (lampInstance.child) }
 	  env.child = ∅
-	  enter ~.state_ON (lampInstance)
+	  enter !.state_ON (lampInstance)
         --> enter_ON (lampInstance) { pass }
-	  env.state = ~.state_ON
+	  env.state = !.state_ON
 	}
 --> lampInstance.isReady () --> True
 --> lampInstance.step (m)
   --> m = lampInstance.inq.dequeue ()
   --> lampInstance.handle (m, lampInstance)
-  [ 'ON', ~.state_ON ]
-    -->   ~.state_ON = λ(M ('pwr', True, ∅), lampInstance).{
-            cond { (message.port == 'pwr') { ~.next ('OFF', lampInstance) } }
+  [ 'ON', !.state_ON ]
+    -->   !.state_ON = λ(M ('pwr', True, ∅), lampInstance).{
+            cond { (message.port == 'pwr') { !.next ('OFF', lampInstance) } }
           }
-      --> { ~.next (~.state_OFF, lampInstance) }
-	function next (~.state_OFF, lampInstance) {
+      --> { !.next (!.state_OFF, lampInstance) }
+	function next (!.state_OFF, lampInstance) {
 	  if (lampInstance.child) { exit lampInstance.child.state (lampInstance.child) }
 	  env.child = ∅
-	  enter ~.state_OFF (lampInstance)
+	  enter !.state_OFF (lampInstance)
         --> enter_OFF (lampInstance) { pass }
-	  env.state = ~.state_OFF
+	  env.state = !.state_OFF
 	}
 --> lampInstance.isReady () --> False
 ```

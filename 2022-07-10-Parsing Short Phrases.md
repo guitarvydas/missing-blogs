@@ -135,7 +135,7 @@ ChapterName = name
 filename = name
 
 spoken = spokenchar+
-spokenchar = ~separator any
+spokenchar = !separator any
 
 separator = "❖"
 period = "."
@@ -167,34 +167,34 @@ number = "-"? digit+
 # Identity Transpiler
 ```
   const identityfmt = String.raw`
-text [@macro] = [[~{macro}]]
+text [@macro] = [[!{macro}]]
 
-macro [x] = [[~{x}]]
+macro [x] = [[!{x}]]
   
-ShowPhrase [kShow filename kat Coordinate] = [[~{kShow}~{filename}~{kat}~{Coordinate}]]
-MovePhrase [kMove filename kto Coordinate TimeSpan] = [[~{kMove}~{filename}~{kto}~{Coordinate}~{TimeSpan}]]
-WaitPhrase [kWait number kframes] = [[~{kWait}~{number}~{kframes}]]
-FadeToBlackPhrase [kFade kto kblack TimeSpan] = [[~{kFade}~{kto}~{kblack}~{TimeSpan}]]
-JumpPhrase [kJump ChapterName] = [[~{kJump}~{ChapterName}]]
-lex_CHELNAspoken [kCHELNA @spaces Spoken] = [[~{kCHELNA}~{spaces}~{Spoken}]]
-lex_MEspoken [kME @spaces Spoken] = [[~{kME}~{spaces}~{Spoken}]]
-lex_RADIOspoken [kRADIO @spaces Spoken] = [[~{kRADIO}~{spaces}~{Spoken}]]
+ShowPhrase [kShow filename kat Coordinate] = [[!{kShow}!{filename}!{kat}!{Coordinate}]]
+MovePhrase [kMove filename kto Coordinate TimeSpan] = [[!{kMove}!{filename}!{kto}!{Coordinate}!{TimeSpan}]]
+WaitPhrase [kWait number kframes] = [[!{kWait}!{number}!{kframes}]]
+FadeToBlackPhrase [kFade kto kblack TimeSpan] = [[!{kFade}!{kto}!{kblack}!{TimeSpan}]]
+JumpPhrase [kJump ChapterName] = [[!{kJump}!{ChapterName}]]
+lex_CHELNAspoken [kCHELNA @spaces Spoken] = [[!{kCHELNA}!{spaces}!{Spoken}]]
+lex_MEspoken [kME @spaces Spoken] = [[!{kME}!{spaces}!{Spoken}]]
+lex_RADIOspoken [kRADIO @spaces Spoken] = [[!{kRADIO}!{spaces}!{Spoken}]]
 
-Coordinate [number1 kx number2] = [[~{number1}~{kx}~{number2}]]
-TimeSpan [kover number kframes] = [[~{kover}~{number}~{kframes}]]
-ChapterName [name] = [[~{name}]]
-filename [name] = [[~{name}]]
+Coordinate [number1 kx number2] = [[!{number1}!{kx}!{number2}]]
+TimeSpan [kover number kframes] = [[!{kover}!{number}!{kframes}]]
+ChapterName [name] = [[!{name}]]
+filename [name] = [[!{name}]]
 
-spoken [@cs] = [[~{cs}]]
-spokenchar [c] = [[~{c}]]
+spoken [@cs] = [[!{cs}]]
+spokenchar [c] = [[!{c}]]
 
-name [nameFirst @nameRest] = [[~{nameFirst}~{nameRest}]]
-nameFirst [letter] = [[~{letter}]]
-nameRest [c] = [[~{c}]]
-number [@kminus @digit] = [[~{kminus}~{digit}]]
+name [nameFirst @nameRest] = [[!{nameFirst}!{nameRest}]]
+nameFirst [letter] = [[!{letter}]]
+nameRest [c] = [[!{c}]]
+number [@kminus @digit] = [[!{kminus}!{digit}]]
 
-period [c] = [[~{c}]]
-separator [c] = [[~{c}]]
+period [c] = [[!{c}]]
+separator [c] = [[!{c}]]
 `;
 
 ```
@@ -202,31 +202,31 @@ separator [c] = [[~{c}]]
 # Lisp Transpiler
 ```
   const lispfmt = String.raw`
-text [@macro] = [[\n(onenter\n~{macro})]]
+text [@macro] = [[\n(onenter\n!{macro})]]
 
-macro [x] = [[~{x}]]
+macro [x] = [[!{x}]]
   
-ShowPhrase [kShow filename kat Coordinate] = [[\n(image "~{filename}" ~{Coordinate})]]
-MovePhrase [kMove filename kto Coordinate TimeSpan] = [[\n(moveto "~{filename}" "???" ~{Coordinate}~{TimeSpan} easin)]]
-WaitPhrase [kWait number kframes] = [[\n(wait ~{number})]]
-FadeToBlackPhrase [kFade kto kblack TimeSpan] = [[\n(fadeout ~{TimeSpan})]]
-JumpPhrase [kJump ChapterName] = [[\n(jump "~{ChapterName}")]]
-lex_CHELNAspoken [kCHELNA @spaces Spoken] = [[\n(say "CHEL:NA" "~{Spoken}")]]
-lex_MEspoken [kME @spaces Spoken] = [[\n(say "ME" "~{Spoken}")]]
-lex_RADIOspoken [kRADIO @spaces Spoken] = [[\n(say "RADIO" "~{Spoken}")]]
+ShowPhrase [kShow filename kat Coordinate] = [[\n(image "!{filename}" !{Coordinate})]]
+MovePhrase [kMove filename kto Coordinate TimeSpan] = [[\n(moveto "!{filename}" "???" !{Coordinate}!{TimeSpan} easin)]]
+WaitPhrase [kWait number kframes] = [[\n(wait !{number})]]
+FadeToBlackPhrase [kFade kto kblack TimeSpan] = [[\n(fadeout !{TimeSpan})]]
+JumpPhrase [kJump ChapterName] = [[\n(jump "!{ChapterName}")]]
+lex_CHELNAspoken [kCHELNA @spaces Spoken] = [[\n(say "CHEL:NA" "!{Spoken}")]]
+lex_MEspoken [kME @spaces Spoken] = [[\n(say "ME" "!{Spoken}")]]
+lex_RADIOspoken [kRADIO @spaces Spoken] = [[\n(say "RADIO" "!{Spoken}")]]
 
-Coordinate [number1 kx number2] = [[~{number1} ~{number2}]]
-TimeSpan [kover number kframes] = [[~{number}]]
-ChapterName [name] = [[~{name}]]
-filename [name] = [[~{name}]]
+Coordinate [number1 kx number2] = [[!{number1} !{number2}]]
+TimeSpan [kover number kframes] = [[!{number}]]
+ChapterName [name] = [[!{name}]]
+filename [name] = [[!{name}]]
 
-spoken [@cs] = [[~{cs}]]
-spokenchar [c] = [[~{c}]]
+spoken [@cs] = [[!{cs}]]
+spokenchar [c] = [[!{c}]]
 
-name [nameFirst @nameRest] = [[~{nameFirst}~{nameRest}]]
-nameFirst [letter] = [[~{letter}]]
-nameRest [c] = [[~{c}]]
-number [@kminus @digit] = [[~{kminus}~{digit}]]
+name [nameFirst @nameRest] = [[!{nameFirst}!{nameRest}]]
+nameFirst [letter] = [[!{letter}]]
+nameRest [c] = [[!{c}]]
+number [@kminus @digit] = [[!{kminus}!{digit}]]
 
 period [c] = [[]]
 separator [c] = [[]]
@@ -237,31 +237,31 @@ separator [c] = [[]]
 # JSON Transpiler
 ```
   const jsonfmt = String.raw`
-text [@macro] = [[\n{ onenter:\n[~{macro}true]\n}\n]]
+text [@macro] = [[\n{ onenter:\n[!{macro}true]\n}\n]]
 
-macro [x] = [[~{x}]]
+macro [x] = [[!{x}]]
   
-ShowPhrase [kShow filename kat Coordinate] = [[\n["image","~{filename}",~{Coordinate}],]]
-MovePhrase [kMove filename kto Coordinate TimeSpan] = [[\n["moveto","~{filename}","???",~{Coordinate}~{TimeSpan},"easin"],]]
-WaitPhrase [kWait number kframes] = [[\n["wait",~{number}],]]
-FadeToBlackPhrase [kFade kto kblack TimeSpan] = [[\n["fadeout",~{TimeSpan}],]]
-JumpPhrase [kJump ChapterName] = [[\n["jump","~{ChapterName}"],]]
-lex_CHELNAspoken [kCHELNA @spaces Spoken] = [[\n["say","CHEL:NA","~{Spoken}"],]]
-lex_MEspoken [kME @spaces Spoken] = [[\n["say","ME","~{Spoken}"],]]
-lex_RADIOspoken [kRADIO @spaces Spoken] = [[\n["say","RADIO","~{Spoken}"],]]
+ShowPhrase [kShow filename kat Coordinate] = [[\n["image","!{filename}",!{Coordinate}],]]
+MovePhrase [kMove filename kto Coordinate TimeSpan] = [[\n["moveto","!{filename}","???",!{Coordinate}!{TimeSpan},"easin"],]]
+WaitPhrase [kWait number kframes] = [[\n["wait",!{number}],]]
+FadeToBlackPhrase [kFade kto kblack TimeSpan] = [[\n["fadeout",!{TimeSpan}],]]
+JumpPhrase [kJump ChapterName] = [[\n["jump","!{ChapterName}"],]]
+lex_CHELNAspoken [kCHELNA @spaces Spoken] = [[\n["say","CHEL:NA","!{Spoken}"],]]
+lex_MEspoken [kME @spaces Spoken] = [[\n["say","ME","!{Spoken}"],]]
+lex_RADIOspoken [kRADIO @spaces Spoken] = [[\n["say","RADIO","!{Spoken}"],]]
 
-Coordinate [number1 kx number2] = [[~{number1},~{number2}]]
-TimeSpan [kover number kframes] = [[~{number}]]
-ChapterName [name] = [[~{name}]]
-filename [name] = [[~{name}]]
+Coordinate [number1 kx number2] = [[!{number1},!{number2}]]
+TimeSpan [kover number kframes] = [[!{number}]]
+ChapterName [name] = [[!{name}]]
+filename [name] = [[!{name}]]
 
-spoken [@cs] = [[~{cs}]]
-spokenchar [c] = [[~{c}]]
+spoken [@cs] = [[!{cs}]]
+spokenchar [c] = [[!{c}]]
 
-name [nameFirst @nameRest] = [[~{nameFirst}~{nameRest}]]
-nameFirst [letter] = [[~{letter}]]
-nameRest [c] = [[~{c}]]
-number [@kminus @digit] = [[~{kminus}~{digit}]]
+name [nameFirst @nameRest] = [[!{nameFirst}!{nameRest}]]
+nameFirst [letter] = [[!{letter}]]
+nameRest [c] = [[!{c}]]
+number [@kminus @digit] = [[!{kminus}!{digit}]]
 
 period [c] = [[]]
 separator [c] = [[]]

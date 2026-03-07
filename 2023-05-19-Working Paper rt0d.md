@@ -161,7 +161,7 @@ Define the scope for a temporary variable.  An RT operation.
 ```
 # Defsynonym
 ```
-def-synonym Port-Kind ~ String
+def-synonym Port-Kind ! String
 ```
 Define a synonym that is in effect for the complete compilation unit.
 

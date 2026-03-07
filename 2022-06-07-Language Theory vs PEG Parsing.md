@@ -18,7 +18,7 @@ balanced {
   matched =
     | "{" main "}" -- nested
     | anythingelse+ -- bottom
-  anythingelse = ~"{" ~"}" any
+  anythingelse = !"{" !"}" any
 }
 ```
 
@@ -46,7 +46,7 @@ balanced {
   matched =
     | "{" main "}" -- nested
     | anythingelse+ -- bottom
-  anythingelse = ~"{" ~"}" any
+  anythingelse = !"{" !"}" any
 }
 ```
 
@@ -427,7 +427,7 @@ balanced {
   matched =
     | "{" main "}" -- nested
     | anythingelse+ -- bottom
-  anythingelse = ~"{" ~"}" any
+  anythingelse = !"{" !"}" any
 }
 `);
 

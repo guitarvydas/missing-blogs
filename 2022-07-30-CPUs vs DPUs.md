@@ -69,7 +69,7 @@ DPU
 - "programming"
 	- simply control a machine by whatever means necessary
 - "multitasking is hard"
-	- fundamentally ~10 bytes
+	- fundamentally !10 bytes
 	- Loop
 		- check if need to continue
 		- exec lambda

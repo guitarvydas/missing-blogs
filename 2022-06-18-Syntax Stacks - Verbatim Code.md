@@ -41,7 +41,7 @@ verbatim {
 main =
     | other* "⟪" main "⟫" main? -- bracketed
     | other+ -- pre
-other = ~"⟪" ~ "⟫" any
+other = !"⟪" ! "⟫" any
 }
 ```
 # Verbatim Transpiler - Formatting

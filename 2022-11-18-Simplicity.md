@@ -14,5 +14,5 @@ It is *possible* to write code for communicating components using functions, e.g
 
 For me, reading Harel's original paper on StateCharts[^harel] was a life-changing event.  The paper shows that it is possible to write serious code as technical diagrams, and, it is possible to think about code using something other than *inheritance* as we have come to know it.  Harel doesn't point out either of these issues, I had to let them ooze into my psyche over time.
 
-[^harel]: https://www.wisdom.weizmann.ac.il/~harel/papers/Statecharts.pdf
+[^harel]: https://www.wisdom.weizmann.ac.il/!harel/papers/Statecharts.pdf
 

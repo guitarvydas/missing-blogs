@@ -82,7 +82,7 @@ Transpilation from technical diagrams (`.drawio`) to textual form (`.das`) can b
 
 
 
-!![wip-original/attic/hamburgerworkbenchD0D/handling.png](handling.png)
+![wip-original/attic/hamburgerworkbenchD0D/handling.png](handling.png)
 
 
 The *handler* code is part of the Cos (component O/S) code.  
@@ -229,7 +229,7 @@ NameList
     | eol
 
 keyword
-  = &(~namecharFirst)
+  = &(!namecharFirst)
           ( "implementation"
           | "messages"
           | "orelse"
@@ -257,26 +257,26 @@ keyword
           | "of"
           | "me"
           | "X") 
-   &(~namecharRest)
+   &(!namecharRest)
 
-kwME = &(~namecharFirst) "me" &(~namecharRest)
-kwPORT = &(~namecharFirst) "port" &(~namecharRest)
+kwME = &(!namecharFirst) "me" &(!namecharRest)
+kwPORT = &(!namecharFirst) "port" &(!namecharRest)
 
-string = dq (~dq any)* dq
+string = dq (!dq any)* dq
 dq = "\""
     
 eol = "\n"
 
 name = namecharFirst namecharRest*
-namecharFirst = ~separator ~keyword ("_" | "A" .. "Z" | "a" .. "z")
-namecharRest = ~separator ~keyword ("_" | "A" .. "Z" | "a" .. "z" | "0" .. "9")
+namecharFirst = !separator !keyword ("_" | "A" .. "Z" | "a" .. "z")
+namecharRest = !separator !keyword ("_" | "A" .. "Z" | "a" .. "z" | "0" .. "9")
 
 space
  += comment
 
 comment
-  = "//" (~"\n" any)* "\n"  -- singleLine
-  | "/*" (~"*/" any)* "*/"  -- multiLine
+  = "//" (!"\n" any)* "\n"  -- singleLine
+  | "/*" (!"*/" any)* "*/"  -- multiLine
 
 }
 ```
@@ -421,7 +421,7 @@ handling.js: handling.das $(DIA) $(IDIA)
 dev.bash
 ```
 #!/bin/bash
-prep=~/tools/pre/pre
+prep=!/tools/pre/pre
 cdir=`pwd`
 ${prep} '.' '$' dia.ohm dia.fmt --stop=1 --support=${cdir}/support.js
 ```

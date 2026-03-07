@@ -23,12 +23,12 @@ Originally, there was no stack pointer, so everything was done with clever assem
 
 CPU vendors have added hardware-assist to their instruction sets, to make context switching easier and faster.
 
-!![multitasking-context-switch-step-1.png](multitasking-context-switch-step-1.png)
+![multitasking-context-switch-step-1.png](multitasking-context-switch-step-1.png)
 ## 2. Context Switch Step 2
 
 In step 2, we restore the state of *process B*, by overwriting CPU registers (etc.).
 
-!![multitasking-context-switch-step-2.png](multitasking-context-switch-step-2.png)
+![multitasking-context-switch-step-2.png](multitasking-context-switch-step-2.png)
 ## 3. Context Switch Step 3
 In the final step, *process B* is resumed.
 
@@ -36,4 +36,4 @@ Again, the exact way that this is done depends on the hardware.
 
 One trick might be to futz with the return address on *process B*'s stack, then `RETURN` to *process B*.  In essence the *return* address is a pointer to the *continuation* of *process B*.
 
-!![multitasking-context-switch-step-3.png](multitasking-context-switch-step-3.png)
+![multitasking-context-switch-step-3.png](multitasking-context-switch-step-3.png)
