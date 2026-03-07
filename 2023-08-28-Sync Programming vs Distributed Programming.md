@@ -35,7 +35,7 @@ Async allows for different ways of addressing efficiency.
 
 An example might be a network protocol stack.  
 
-!![Excalidraw/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw.svg](images/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw_25.svg)
+!![Excalidraw/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw.svg](images/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw.svg)
 
 At the bottom-most layer (F1), the hardware has to be really, really fast and the software handlers need to keep up with the hardware.  At the top layer (F3), though, evaluation can proceed more "slowly" and only needs to keep up with human users' expectations.  Humans don't perceive something to be  sluggish unless more than 20msec is required for an interaction.
 
@@ -123,7 +123,7 @@ This makes it harder to scale a system by chopping parts up into smaller units a
 
 The async meme encourages composing a system from stand-alone, decoupled units.  Moving decoupled units around to scale the system upwards is easier.  The units are already decoupled, therefore less work is required to decouple the units when scaling the system.
 
-!![Excalidraw/2023-08-28-Sync Programming vs Distributed Programming 2023-08-29 12.32.29.excalidraw.svg](images/2023-08-28-Sync Programming vs Distributed Programming 2023-08-29 12.32.29.excalidraw_12.svg)
+!![Excalidraw/2023-08-28-Sync Programming vs Distributed Programming 2023-08-29 12.32.29.excalidraw.svg](images/2023-08-28-Sync Programming vs Distributed Programming 2023-08-29 12.32.29.excalidraw.svg)
 
 ## The Ground Truth Has Changed
 

@@ -19,12 +19,12 @@ Deferred messages are messages that are not delivered immediately, but, simply p
 **Of Note**: Step (2) can be automated.  I perform this step manually for explanatory purposes.   See elsewhere for my technique of automatically transpiling diagrams to text code.
 
 ## 1. Black Box Transpiler Signature
-!![pm/smallstepswithtbx/fmt-Transpiler.png](fmt-Transpiler_30.png)
+!![pm/smallstepswithtbx/fmt-Transpiler.png](fmt-Transpiler.png)
 
 
 ## 2022-06-18-Black Box Software Components
 
-!![pm/smallstepswithtbx/fmt-Transpiler.png](fmt-Transpiler_30.png)
+!![pm/smallstepswithtbx/fmt-Transpiler.png](fmt-Transpiler.png)
 
 > [!tip] A black box does not know where its output messages will be routed.
 

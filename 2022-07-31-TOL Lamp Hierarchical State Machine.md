@@ -116,7 +116,7 @@ But, I chose not to implement *history* in this example, to keep things simple.
 ---
 # Top Level Lamp
 
-!![hsm-Lamp 0.png](images/hsm-Lamp 0_29.png)
+!![hsm-Lamp 0.png](images/hsm-Lamp 0.png)
 
 The Lamp has 3 toggle buttons
 1. power (pwr) "on" and "off"
@@ -124,7 +124,7 @@ The Lamp has 3 toggle buttons
 3. color "yellow", "green", "red" (3rd press goes back to "yellow")
 ---
 # Flat Diagram
-!![hsm-Lamp.png](hsm-Lamp_29.png)
+!![hsm-Lamp.png](hsm-Lamp.png)
 
 This diagram reads from Left to Right.
 
@@ -142,7 +142,7 @@ The 3 "colour" sub-machines are similar to one another.  We would like to have a
 ---
 # Collapsed Diagram
 
-!![hsm-Lamp 2.png](images/hsm-Lamp 2_29.png)
+!![hsm-Lamp 2.png](images/hsm-Lamp 2.png)
 
 The above essay discusses the design of the Lamp example used here.
 
@@ -151,7 +151,7 @@ I will not discuss the design here, but will use one of the diagrams from that e
 ---
 
 # Diagram
-!![hsm-Lamp.png](hsm-Lamp_29.png)
+!![hsm-Lamp.png](hsm-Lamp.png)
 
 ---
 
@@ -249,7 +249,7 @@ Each *state* is represented by a function that handles all messages when the mac
 # Asynchronous vs Synchronous
 FIFOs vs LIFOs
 
-!![containers-20220731.png](containers-20220731_14.png)
+!![containers-20220731.png](containers-20220731.png)
 
 [Aside: Asynchronous operation is facilitated by using FIFOs (queues) instead of LIFOs (stacks)]
 
@@ -257,14 +257,14 @@ FIFOs vs LIFOs
 # Asynchronous vs Synchronous
 Multiple Outputs
 
-!![containers-20220731-multiple outputs.png](images/containers-20220731-multiple outputs_14.png)
+!![containers-20220731-multiple outputs.png](images/containers-20220731-multiple outputs.png)
 
 ---
 
 # Asynchronous vs Synchronous
 Multiple Inputs
 
-!![containers-20220731-multiple inputs.png](images/containers-20220731-multiple inputs_14.png)
+!![containers-20220731-multiple inputs.png](images/containers-20220731-multiple inputs.png)
 
 ---
 

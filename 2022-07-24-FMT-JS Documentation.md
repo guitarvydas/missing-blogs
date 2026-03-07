@@ -45,12 +45,12 @@ In the simplest case, programmers type one line of fmt-js text and generate one 
 
 In more-complicated cases, programmers paste multi-line *fmt* specifications into a window and generate many Javascript functions wrapped in a Javascript *namespace*, suitable for cutting-and-pasting into an Ohm-JS project.
 
-!![transpile-Workbench.png](transpile-Workbench_14.png)
+!![transpile-Workbench.png](transpile-Workbench.png)
 
 # Transpile Function
 In addition to the workbench, I have included a program called `transpile.js` which can be used to create whole transpilers.
 
-!![transpile.png](transpile_14.png)
+!![transpile.png](transpile.png)
 
 (See below for documentation of the parameters to the *transpile* function).)
 

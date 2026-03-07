@@ -27,8 +27,8 @@ As another concrete example, think about how ethernet works.  Nodes on the netwo
 ## Example
 Imagine a very simple software stack, three layers deep.
 
-!![Excalidraw/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw.svg](images/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw_24.svg)
-!![Excalidraw/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw.svg](images/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw_24.svg)
+!![Excalidraw/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw.svg](images/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw.svg)
+!![Excalidraw/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw.svg](images/2023-08-24-Smalltalk Does Not Use Message Passing 2023-08-24 05.05.29.excalidraw.svg)
 
 
 When an input arrives, F1 handles it promptly then Sends a Message to F2.  F2 handles Messages from F1 and sometimes sends a Message to F3.

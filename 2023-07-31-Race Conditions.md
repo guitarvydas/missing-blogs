@@ -6,7 +6,7 @@ There is actually only one (1) Race Condition.
 Race Conditions are caused by limitations in our hardware's ability to detect timing of events.
 
 ## Obvious Non-Race
-!![Excalidraw/2023-07-31-Race Conditions 2023-08-01 19.16.51.excalidraw.svg](images/2023-07-31-Race Conditions 2023-08-01 19.16.51.excalidraw_12.svg)
+!![Excalidraw/2023-07-31-Race Conditions 2023-08-01 19.16.51.excalidraw.svg](images/2023-07-31-Race Conditions 2023-08-01 19.16.51.excalidraw.svg)
 
 
 Clearly, we can tell that B arrived before A.
@@ -16,7 +16,7 @@ Because 1 second is a looong time and our hardware can differentiate events that
 ## Not-So Obvious
 
 !
-!![Excalidraw/2023-07-31-Race Conditions 2023-08-01 19.27.39.excalidraw.svg](images/2023-07-31-Race Conditions 2023-08-01 19.27.39.excalidraw_12.svg)
+!![Excalidraw/2023-07-31-Race Conditions 2023-08-01 19.27.39.excalidraw.svg](images/2023-07-31-Race Conditions 2023-08-01 19.27.39.excalidraw.svg)
 
 Did A come before B or did B come before A???  
 

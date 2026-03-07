@@ -11,7 +11,7 @@ This WP note (Working Paper) is a capture of my thoughts as I go.
 I already know how to transpile diagrams to code.  I discovered that hand-transpiling diagrams to fugly text is easy.  So easy even a machine could do it.  I guess that, for now, I will draw the diagrams and hand transpile them to Ohm-JS-able text code.  We'll see ...
 
 # Top Level Script
-!![app-1. nested.png](images/app-1. nested_15.png)
+!![app-1. nested.png](images/app-1. nested.png)
 
 Not exactly rocket science...
 1. clean out the target directory
@@ -21,7 +21,7 @@ Not exactly rocket science...
 How hard can this be?
 
 # Layer 2 - Rewrite Diagram as Communicating Components
-!![app-2. rewritten as component.png](images/app-2. rewritten as component_15.png)
+!![app-2. rewritten as component.png](images/app-2. rewritten as component.png)
 
 The inputs are async - they are not constrained to come "at the same time".
 
@@ -61,7 +61,7 @@ So, it seems that we need 3 boxes inside the implementation of this *for each*
 2. the logic for iteration
 3. the sub-box which gets invoked repeatedly.
 
-!![app-2a. _noname_1.png](images/app-2a. _noname_1_15.png)
+!![app-2a. _noname.png](images/app-2a. _noname_1.png)
 
 The *for each* logic sends messages to the wrapped sub-component.  The messages make it *seem* that the sub-component is being invoked in the normal way, on a single item, instead of a list of items.
 
@@ -86,7 +86,7 @@ What is the logic for the *for each* box?  I like state machines, so I've drawn 
 machine.
 
 
-!![app-3. forall-state-diagram.png](images/app-3. forall-state-diagram_15.png)
+!![app-3. forall-state-diagram.png](images/app-3. forall-state-diagram.png)
 We see that the *for each* state machine has 4 inputs:
 1. ū, to set the environment (in this simple example, this does nothing useful)
 2. name, the variable name that will be used to hold each successive filename

@@ -11,7 +11,7 @@ If something goes wrong, an error message (probably a string) is sent to the err
 
 # DI - Outline
 
-!![DrawIO/Tee-Tee Outline.drawio.svg](images/Tee-Tee Outline.drawio_12.svg)
+!![DrawIO/Tee-Tee Outline.drawio.svg](images/Tee-Tee Outline.drawio.svg)
 
 The Tee component has two inputs and two outputs.
 
@@ -29,21 +29,21 @@ Note that I ignore the *error* outputs when discussing only DI...
 
 ## Tee 1
 
-!![500](Tee-Tee1.drawio_12.svg)
+!![500](Tee-Tee1.drawio.svg)
 One Echo component.  Its output is split two ways
 1. to the output
 2. to the filewriter
 
 ## Tee 2
 
-!![500](Tee-Tee2.drawio_12.svg)
+!![500](Tee-Tee2.drawio.svg)
 The input is split 2 ways
 1. to the first Echo which feeds the output
 2. to the second Echo which feeds the filewriter
 
 ## Tee 3
 
-!![500](Tee-Tee3.drawio_12.svg)
+!![500](Tee-Tee3.drawio.svg)
 The input is split 3 ways
 1. to the first Echo which feeds the output
 2. to the second Echo with an unconnected output (it generates its output, but the router drops the output)
@@ -54,7 +54,7 @@ Obviously this version is *contrived* and not very useful in this example form. 
 # Bells and Whistles
 
 
-!![500](Tee-Tee.drawio_12.svg)
+!![500](Tee-Tee.drawio.svg)
 This version uses the layout of Tee 1, but adds error handling.
 
 In the specification, we say that Tee generates no output if an error is encountered.  This requires a Gate component that checks whether the File Write succeeded before allowing Echo's output to feed through to the output.

@@ -9,4 +9,4 @@
 
 
 
-!![type stacks.png](images/type stacks_98.png)
+!![type stacks.png](images/type stacks.png)

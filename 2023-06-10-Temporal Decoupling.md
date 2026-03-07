@@ -134,9 +134,9 @@ Note that *relational programming* languages do not imply sequencing.  The progr
 Further to simplifying temporal decoupling, one wants a way to *nest* and *elide* sequencing in a *relative* manner.  Nesting - without any information leakage - allows treating program units as *black boxes*.  Currently-popular programming languages, based on *functions* and on the *CALL* and *RETURN* opcodes of PEMs - e.g. Haskell, Python, Rust, etc. - tend to leak information / knowledge-of-details, and, thus, discourage the creation of program units as *black boxes*.  Programmers *believe* in a fiction, i.e. that code libraries are *black boxes*, but, libraries leak details, e.g. calling a function by name is a detail leak. The name of a called function is itself is an absolute - as opposed to relative - piece of information.  Attempts at addressing this kind of leakage have been done through the use of epicycles such as *packages*.
 
 The general concept of *nesting* is apparent with Russian Dolls and peeling successive skins from onions.
-!![300](Russian_Dolls_12.jpg)
+!![300](Russian_Dolls.jpg)
 
-!![300](Open_onion_(303892944)_12.jpg)
+!![300](Open_onion_(303892944).jpg)
 
 ## Reality
 CPU designs are based on sequencing of steps - sequencing of scripts of opcodes.  

@@ -74,7 +74,7 @@ Fan-out is the notion that a single source port feeds multiple sink ports.
 
 Fan-in is the notion that multiple source ports feed into a single sink port.
 
-!![DrawIO/fanin-and-fanout.drawio.svg](fanin-and-fanout.drawio_12.svg)
+!![DrawIO/fanin-and-fanout.drawio.svg](fanin-and-fanout.drawio.svg)
 
 Fan-in and fan-out can be represented as multiple single connections from the same source or to the same sink.  This requires that all connections in a Container be examined and acted upon in an atomic manner.
 

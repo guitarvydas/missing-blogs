@@ -127,11 +127,11 @@ function f (...) {
 ```
 
 Would be written in diagram form as:
-!![globals-freevariable.png](globals-freevariable_48.png)
+!![globals-freevariable.png](globals-freevariable.png)
 
 Upon seeing this, we would be compelled to rewrite it as:
 
-!![globals-boundvariable.png](globals-boundvariable_48.png)
+!![globals-boundvariable.png](globals-boundvariable.png)
 
 Which immediately wraps a *scope* around the global variable `x` and makes it obvious, to the reader, what the scope of `x` is and where it can be used.
 
@@ -166,7 +166,7 @@ Devising a syntax for conditionals, e.g. `if`, is straight-forward as a technica
 
 E.G.
 
-!![ifthenelse.png](ifthenelse_47.png)
+!![ifthenelse.png](ifthenelse.png)
 
 This technical diagram can be compiled to an executable program, but, if one insists on using ASCII Art to represent the diagram, we get
 
@@ -224,9 +224,9 @@ space += comment
 ```
 
 This grammar parses both cases, if-then and if-then-else
-!![t1.png](t1_47.png)
-!![t2.png](t2_47.png)
-!![t3.png](t3_47.png)
+!![t1.png](t1.png)
+!![t2.png](t2.png)
+!![t3.png](t3.png)
 
 # Readability
 A problem arises when the ASCII Art form is made "more readable".
@@ -306,7 +306,7 @@ is an *if-then* statement followed by a *compound statement*.
 # Transpiling Human Readable Syntax to Machine Readable Syntax
 The screenshot below shows a quickie grammar for recognizing human-readable if-else statements.  The code for a full transpiler follows.  This screenshot uses the Ohm-JS Ohm-editor...
 
-!![t4.png](t4_47.png)
+!![t4.png](t4.png)
 
 ## Transpiler Example Code
 This code runs in a browser and uses Ohm-JS for parsing.
@@ -591,8 +591,8 @@ Note implicit sequence based on ordering of the lines of text
 
 # Explicit Sequencing
 ## Basic
-!![sequential-basic.png](sequential-basic_31.png)
+!![sequential-basic.png](sequential-basic.png)
 
 ## Layout Changed
 
-!![sequential-changedlayout.png](sequential-changedlayout_31.png)
+!![sequential-changedlayout.png](sequential-changedlayout.png)

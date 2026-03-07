@@ -28,4 +28,4 @@ suggestion:
 
 
 
-!![type stacks.png](images/type stacks_97.png)
+!![type stacks.png](images/type stacks.png)

@@ -1,4 +1,5 @@
-# 2022-05-28-Faking ConcurrencyAsync and concurrency can be faked on a single CPU through the use of epicycles, but, epicycles cause gotchas (see Mars Pathfinder disaster, thread safety, etc.).
+# 2022-05-28-Faking Concurrency
+Async and concurrency can be faked on a single CPU through the use of epicycles, but, epicycles cause gotchas (see Mars Pathfinder disaster, thread safety, etc.).
 
 2 separate rPIs connected by a wire are parallel and are async.  Neither one needs faked concurrency nor faked async, but we program them that way anyway.
 
@@ -17,7 +18,7 @@ tags:
 ---
 
 # Fire And Forget
-!![fireandforget-fire-and-forget.png](fireandforget-fire-and-forget_60.png)
+!![fireandforget-fire-and-forget.png](fireandforget-fire-and-forget.png)
 
 ### 2022-06-04-Fire and Forget
 
@@ -51,20 +52,20 @@ In the micro-managed model, two clocks are just like one bigger clock - all acti
 In an async model, the two clocks are completely independent.  The actions of one clock's gears do not affect, do not slow down, the action of the other clock's gears.
 
 # Simultaneity
-!![fireandforget-simultaneity.png](fireandforget-simultaneity_60.png)
+!![fireandforget-simultaneity.png](fireandforget-simultaneity.png)
 
 # Faking Multitasking on 1 CPU
-!![fireandforget-faking-on-1-cpu.png](fireandforget-faking-on-1-cpu_60.png)
+!![fireandforget-faking-on-1-cpu.png](fireandforget-faking-on-1-cpu.png)
 # Anti 0D
 Tools that appease the use of dependencies instead of addressing the fundamental problem (getting rid of dependencies).
-!![fireandforget-anti-0D.png](fireandforget-anti-0D_60.png)
+!![fireandforget-anti-0D.png](fireandforget-anti-0D.png)
 # Execution
-!![fireandforget-execution.png](fireandforget-execution_60.png)
+!![fireandforget-execution.png](fireandforget-execution.png)
 # Operating System Processes
-!![fireandforget-operating-system-processes.png](fireandforget-operating-system-processes_60.png)
+!![fireandforget-operating-system-processes.png](fireandforget-operating-system-processes.png)
 # Multiple Single CPUs
-!![fireandforget-multiple-single-cpus.png](fireandforget-multiple-single-cpus_60.png)iple Single CPUs
+!![fireandforget-multiple-single-cpus.png](fireandforget-multiple-single-cpus.png)iple Single CPUs
 
 # Closures
-!![fireandforget-closures.png](fireandforget-closures_60.png)
+!![fireandforget-closures.png](fireandforget-closures.png)
 )

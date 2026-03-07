@@ -14,7 +14,7 @@ In the bowels of UNIX, this is called `fork()`.  Fork immediately returns a stat
 
 In UNIX, (1) is a non-zero PID, while (2) is the value 0.  It is expected that the parent code executes a `wait` for the PID and after waiting, to execute the continuation code.
 
-!![Excalidraw/retry-2023-04-29-0705.png](retry-2023-04-29-0705_12.png)
+!![Excalidraw/retry-2023-04-29-0705.png](retry-2023-04-29-0705.png)
 
 In JavaScript, this kind of fork is represented by an async function that takes another function argument as its continuation.
 
@@ -22,7 +22,7 @@ In fact, this is a set of *asynchronous* operations and should not be expressed 
 
 Instead, we rewrite the code as three 0D components:
 
-!![Excalidraw/retry0d-2023-04-29-0705.png](retry0d-2023-04-29-0705_12.png)
+!![Excalidraw/retry0d-2023-04-29-0705.png](retry0d-2023-04-29-0705.png)
 
 
 ```
@@ -59,6 +59,6 @@ Will two copies of the Component work asynchronously and run their respective co
 
 I *think* that putting `step ()` back into the scheduler will cause this system to run as expected, with the continuations running as soon as possible.
 
-!![Excalidraw/retry0dtwice-2023-04-29-0705.png](retry0dtwice-2023-04-29-0705_12.png)
+!![Excalidraw/retry0dtwice-2023-04-29-0705.png](retry0dtwice-2023-04-29-0705.png)
 
 This hasn't been tested yet.  I might be missing something obvious...

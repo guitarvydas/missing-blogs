@@ -1,0 +1,12 @@
+# 2023-03-12-SeqTest0 A Simple Container Component# A Simple Container Component (SeqTest0)
+## Intention
+!![Excalidraw/2023-03-12-SeqTest0 A Simple Container Component 2023-03-12 14.43.43.excalidraw.png](images/2023-03-12-SeqTest0 A Simple Container Component 2023-03-12 14.43.43.excalidraw_14.png)
+
+## Implementation
+!![Excalidraw/2023-03-12-SeqTest0 A Simple Container Component 2023-03-12 14.44.19.excalidraw.png](images/2023-03-12-SeqTest0 A Simple Container Component 2023-03-12 14.44.19.excalidraw_14.png)
+
+
+This description of implementation is based on CL0D:
+https://github.com/guitarvydas/cl0d
+
+The repo also contains documentation for every file.

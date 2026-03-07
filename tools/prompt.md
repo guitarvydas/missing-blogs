@@ -1,0 +1,1 @@
+write a python program that loops through all `.md` files in the current directory and changes all references to image files that are in the format `*_d+.png` `*_d+.svg` and `*_d+.jpg` where `d` is a digit, to remove the `_d+` resulting in references `*.png` `*.svg` and `*.jpg` then writes out the changed file back out to the same `.md` file.

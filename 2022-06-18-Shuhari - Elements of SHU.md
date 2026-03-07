@@ -82,7 +82,7 @@ Transpilation from technical diagrams (`.drawio`) to textual form (`.das`) can b
 
 
 
-!![wip-original/attic/hamburgerworkbenchD0D/handling.png](handling_32.png)
+!![wip-original/attic/hamburgerworkbenchD0D/handling.png](handling.png)
 
 
 The *handler* code is part of the Cos (component O/S) code.  

@@ -104,7 +104,7 @@ This isn't the same as building a bunch of little-compilers that work on the *sa
 
 Each little-compiler gets rid of one (1) problem, then punts the rest of the work along to the rest of the pipeline.
 
-!![syntax pipeline.png](images/syntax pipeline_14.png)
+!![syntax pipeline.png](images/syntax pipeline.png)
 
 For example, the first stage of the pipeline might be a tokenizer.  It picks off various keywords and marks them in some special way, e.g. by inserting a character at the front (say "`:`"), or replacing each keyword with a single-character Unicode character (we could use Greek symbols, but Unicode offers more possibilities).  The tokenizer leaves the rest of the text alone, it deals only with pattern-matching keywords.
 

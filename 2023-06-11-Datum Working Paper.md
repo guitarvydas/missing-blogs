@@ -165,12 +165,12 @@ So, for starters, lets take a blunderbuss approach.  A *Datum* consists of the f
 
 The first method requires us to calculate where the *reclaim* *method* begins, using stored *length* for the *clone* method.
 
-!![Excalidraw/2023-06-11-Datum Working Paper 2023-06-11 07.50.44.excalidraw.png](images/2023-06-11-Datum Working Paper 2023-06-11 07.50.44.excalidraw_12.png)
+!![Excalidraw/2023-06-11-Datum Working Paper 2023-06-11 07.50.44.excalidraw.png](images/2023-06-11-Datum Working Paper 2023-06-11 07.50.44.excalidraw.png)
 
 
 In fact, the *clone*, *reclaim*, and, *reflection* data could be stored as *Datums* themselves.  Where does it stop?  I choose - arbitrarily - the above as the bottom-most case.
 
-The second method - using pointers to functions - allows us to treat the *Datum* as an *array* and to calculate the location of the *reclaim* *method* using cheaper indexing and indirection operations.!![Excalidraw/2023-06-11-Datum Working Paper 2023-06-11 08.19.45.excalidraw.png](images/2023-06-11-Datum Working Paper 2023-06-11 08.19.45.excalidraw_12.png)
+The second method - using pointers to functions - allows us to treat the *Datum* as an *array* and to calculate the location of the *reclaim* *method* using cheaper indexing and indirection operations.!![Excalidraw/2023-06-11-Datum Working Paper 2023-06-11 08.19.45.excalidraw.png](images/2023-06-11-Datum Working Paper 2023-06-11 08.19.45.excalidraw.png)
 
 
 In this case, all of the slots are of the same length and we can just *index* into the descriptor.
@@ -212,7 +212,7 @@ We will assume that the block of data bytes is internally properly aligned and t
 
 We will, also, begin drawing the *reflection* field as a pointer to some unknown blob of data.
 
-!![Excalidraw/2023-06-11-Datum Working Paper 2023-06-11 08.43.33.excalidraw.png](images/2023-06-11-Datum Working Paper 2023-06-11 08.43.33.excalidraw_12.png)
+!![Excalidraw/2023-06-11-Datum Working Paper 2023-06-11 08.43.33.excalidraw.png](images/2023-06-11-Datum Working Paper 2023-06-11 08.43.33.excalidraw.png)
 
 
 Note that, up until now, we usually think that *data* is stored directly in memory or as a pointer in memory to an allocated lump of memory containing the data.
@@ -235,7 +235,7 @@ I'll probably use Odin (improved C) to keep me honest at the byte level, or, Lis
 
 ## Third Attempt - Optimizing the Optimized Structure
 
-!![Excalidraw/2023-06-11-Datum Working Paper 2023-06-11 10.05.17.excalidraw.png](images/2023-06-11-Datum Working Paper 2023-06-11 10.05.17.excalidraw_12.png)
+!![Excalidraw/2023-06-11-Datum Working Paper 2023-06-11 10.05.17.excalidraw.png](images/2023-06-11-Datum Working Paper 2023-06-11 10.05.17.excalidraw.png)
 
 
 In this version, we notice that a lot of the same information is shared across many variables.  We can reuse the information and save space at the cost of adding an indirection.  We can add a 2nd level descriptor and simply point to it, saving some 2 address slots per *Datum*.
