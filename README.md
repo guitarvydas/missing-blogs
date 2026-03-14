@@ -4,7 +4,8 @@
 Working on 2022-07-18-Multitasking script.md
 - found ref to descript video
 - created ~/Desktop/blog-videos and exported the video to Multitasking.mp4
-
+- created ./videos which is .gitinored
+- moved Multitasking.mp4 into ./videos and fixed up ref in `2022-07-18/Multitaking script.md`
 
 # 2026-03-07
 
