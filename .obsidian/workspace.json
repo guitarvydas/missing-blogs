@@ -199,6 +199,7 @@
   },
   "active": "cad05b063fa4dc4d",
   "lastOpenFiles": [
+    "tools/strip_image_alt.py",
     "md",
     "2022-07-11-Programming Languages 2 Kinds.md",
     "2022-07-11-No Name Calling.md",
@@ -236,7 +237,6 @@
     "tools/characterize.py~",
     "corpus/corpus_analysis.json",
     "corpus/@make",
-    "corpus/pbp/del_blank_lines",
     "corpus/pbp/sm/pbp/pbp-lifecycle.drawio.png",
     "corpus/pbp/dtree/pbp/pbp-lifecycle.drawio.png",
     "pbp/dtree/pbp/pbp-lifecycle.drawio.png",
