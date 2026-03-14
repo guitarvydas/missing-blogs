@@ -40,6 +40,6 @@ Presently, programmers already perform the above operations manually in an ad-ho
 
 At first, programmers can indicate which blocks are overridable.  In time, methods to automate overriding will be developed, and, will require no extra information from programmers.
 
-![../pm/like that editor-text.png](images/like that editor-text.png)
+![](images/like%20that%20editor-text.png)
 ## Diagram Editor
-![../pm/like that editor-diagram.png](images/like that editor-diagram.png)
+![](images/like%20that%20editor-diagram.png)

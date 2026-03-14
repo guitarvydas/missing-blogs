@@ -1,4 +1,5 @@
-# 2023-04-15-Obsolete-Visualizing Software# Visualizing Software - ė and 0D
+# 2023-04-15-Obsolete-Visualizing Software
+# Visualizing Software - ė and 0D
 The goal of this project is to visualize software components written in the Odin language and to snap components together like LEGO blocks to form software systems.
 
 We don't visualize *every* piece of Odin code, but concentrate on the bare essentials for visualizing and LEGO-ifying code.

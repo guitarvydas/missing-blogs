@@ -29,4 +29,4 @@ suggestion:
 
 
 
-![type stacks.png](images/type stacks.png)
+![](images/type%20stacks.png)

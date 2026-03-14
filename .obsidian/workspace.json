@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2022-06-18-Black Box Software Components.md",
+                "file": "2022-07-11-Type Stacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2022-06-18-Black Box Software Components"
+              "title": "2022-07-11-Type Stacks"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "corpus_analysis"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,52 +197,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "784c3ee119fb5ee9",
+  "active": "cad05b063fa4dc4d",
   "lastOpenFiles": [
+    "md",
+    "2022-07-11-Programming Languages 2 Kinds.md",
+    "2022-07-11-No Name Calling.md",
+    "2022-07-11-Layered Programming.md",
+    "2022-07-11-Extending Flow-Based Programming.md",
+    "2022-07-11-0D.md",
+    "2022-07-10-Parsing Short Phrases.md",
+    "2022-07-10-Layered Programming - New-Breed Structured Programming.md",
+    "2022-07-10-ASC Nodes.md",
+    "2022-07-10-0D Essays.md",
+    "2022-07-09-Old Reality vs New Reality.md",
+    "2022-07-08-Working Paper Thinking About Building A Demo.md",
+    "2022-07-08-Using Ohm-JS Intro.md",
+    "2022-07-08-Peephole Optimizer Using Ohm-JS.md",
+    "2022-07-07-TN-Machine-Writable Python.md",
+    "2022-07-06-Technical Diagrams For Software.md",
+    "2022-07-06-BRS-Wheel Reinvention Jam Ideas.md",
+    "2022-07-03-Staged Transpilation.md",
+    "2022-07-03-BRS Towards A Syntax For Technical Diagrams Of Software.md",
+    "2022-06-29-BRS Towards A Syntax For Technical Diagrams Of Software.md",
+    "2022-06-27-Unbraiding Programming Principles.md",
+    "2022-06-27-Sequential Scheduling.md",
+    "2022-06-27-If All You Have Is A Hammer Everything Looks Like A Nail.md",
+    "2022-06-26-Compiling vs. Modelling.md",
+    "2022-06-25-Unbraiding Visual Programming.md",
+    "2022-06-25-Unbraiding Syntax.md",
+    "checklist.numbers.sb-8ad476ca-bbNcsH",
+    "images/like that editor-text_15.png",
+    "images/like that editor-diagram_15.png",
+    "checklist.numbers",
     "corpus_analysis.json",
-    "2022-06-18-Black Box Software Components.md",
-    "2023-06-10-Temporal Decoupling.md",
-    "corpus_analysis.md",
-    "2023-06-10-Simplifying Assumptions.md",
-    "2023-07-18-Odin0D in 3 Parts.md",
-    "2023-06-24-Programming Simplicity, 0D, Single Threaded Programming.md",
-    "2023-04-08-Type Checking and Premature Optimization.md",
-    "2022-05-28-Multitasking - How It Works.md",
     "tools/analyze_corpus.py",
     "@make",
     "@makec",
     "tools/characterize.py~",
-    "corpus/corpus_analysis.md",
     "corpus/corpus_analysis.json",
     "corpus/@make",
     "corpus/pbp/del_blank_lines",
-    "corpus/pbp/kernel/splitoutput.js",
-    "corpus/pbp/kernel/repl.py",
-    "corpus/pbp/sm/pbp/dtree/README.process_json.md",
-    "corpus/pbp/sm/pbp/dtree/README.md",
-    "corpus/pbp/sm/pbp/dtree/DOCUMENTATION.md",
-    "corpus/pbp/dtree/pbp/dtree/README.process_json.md",
-    "corpus/pbp/dtree/pbp/dtree/README.md",
-    "corpus/pbp/dtree/pbp/dtree/DOCUMENTATION.md",
     "corpus/pbp/sm/pbp/pbp-lifecycle.drawio.png",
-    "corpus/pbp/sm/pbp/api.md",
     "corpus/pbp/dtree/pbp/pbp-lifecycle.drawio.png",
-    "corpus/pbp/dtree/pbp/api.md",
-    "corpus/pbp/api.md",
-    "corpus/README.md",
-    "corpus/2023-11-20-Thoughts on VPLs.md",
-    "corpus/2023-11-19-The Meaning of Layout.md",
-    "corpus/2023-10-31-What If? (Philosophy).md",
-    "corpus/2023-10-22-ECS Thoughts.md",
-    "corpus/2023-10-20-Software Atoms Continued.md",
-    "corpus/2023-10-18-Software Atoms.md",
     "pbp/dtree/pbp/pbp-lifecycle.drawio.png",
     "pbp/sm/pbp/pbp-lifecycle.drawio.png",
     "images/2023-02-11-Computers Dont Just Compute 2023-02-11 10.08.18.excalidraw.png",
     "images/fireandforget-fire-and-forget.png",
     "images/2023-03-12-CL0D Basics 2023-03-12 14.21.08.excalidraw_1.png",
-    "images/2023-03-12-CL0D Basics 2023-03-12 14.20.14.excalidraw_1.png",
-    "images/2023-03-12-CL0D Basics 2023-03-12 14.20.14.excalidraw.png",
-    "images/2023-03-12-CL0D Basics 2023-03-12 14.19.06.excalidraw_1.png"
+    "images/2023-03-12-CL0D Basics 2023-03-12 14.20.14.excalidraw_1.png"
   ]
 }
