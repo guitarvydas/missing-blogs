@@ -11,7 +11,7 @@ I agree.
 
 Lisp has no syntax.
 
-![lisp-parse-tree.png](lisp-parse-tree.png)
+![](lisp-parse-tree.png)
 
 Everything in Lisp is a parse tree, in prefix form.
 
@@ -210,7 +210,7 @@ List Objects tend to use mutation.
 
 CONS tacks new items onto the front of the List.  Structure sharing is implicit.  
 
-![CONS-structure-sharing.png](CONS-structure-sharing.png)
+![](CONS-structure-sharing.png)
 
 In *pure* FP, everything happens in a stack-like manner. 
 

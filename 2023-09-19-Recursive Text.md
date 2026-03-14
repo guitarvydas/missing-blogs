@@ -12,7 +12,7 @@ x>y
 ### machine readable
 #### CST
 
-![ (IMAGE NOT FOUND)](@blogs/diagrams/2023-09-19-Recursive%20Text%202023-09-19%2015.37.12.excalidraw.svg)
+![](@blogs/diagrams/2023-09-19-Recursive%20Text%202023-09-19%2015.37.12.excalidraw.svg)
 
 #### CST reduced to textual form
 `(> x y)`

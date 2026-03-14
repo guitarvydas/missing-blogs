@@ -61,7 +61,7 @@ To make matters worse, CALL/RETURN uses a built-in *shared, global variable* - t
 
 ### Single Parameters That Masquerade As Multiple Parameters
 
-![Excalidraw/notes 10 2023-04-13 07.18.21.excalidraw.png](images/notes 10 2023-04-13 07.18.21.excalidraw.png)
+![](images/notes 10 2023-04-13 07.18.21.excalidraw.png)
 
 
 The astute reader will notice that the two `LOAD` instructions simply desctructure the input parameter.  In other words, the input parameter is only a single parameter, not multiple parameters.
@@ -158,4 +158,4 @@ We *can* put these synchronous concepts back into our expression of distributed 
 https://youtu.be/J8OmhhTlh6k
 ---
 ## Thumbnail
-![pslogo-Functions vs CALL RETURN.png](images/pslogo-Functions vs CALL RETURN.png)
+![](images/pslogo-Functions vs CALL RETURN.png)

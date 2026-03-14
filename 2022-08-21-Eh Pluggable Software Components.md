@@ -12,13 +12,13 @@ To do this we need:
 ## Hello World 
 Very simple example
 ## Leaf
-![hello world eh-Leaf.png](images/hello world eh-Leaf.png)
+![](images/hello world eh-Leaf.png)
 
 ## Container
-![400](images/hello world eh-helloworld.png) 
+![](images/hello world eh-helloworld.png) 
 
 ## Re-Architecting
-![400](images/hello world eh-helloworldworld.png)
+![](images/hello world eh-helloworldworld.png)
 
 # Benefits
 - technical drawings come "for free"
@@ -103,7 +103,7 @@ After that would come a rearrangement of *helloworld.py* that would contain one 
 ## Pipelines
 Pipelines are useful for plumbing software units together, but, functions calling functions do not implement pipelines (due to the LIFO issue).
 ## Structured Message Passing
-![structured message passing.png](images/structured message passing.png)
+![](images/structured message passing.png)
 ## First Principles Thinking
 
 ## First Principles Thinking
@@ -153,7 +153,7 @@ Pluggability is necessary for scalability, but, more elaborate (complicated) exa
 	- pipelines use FIFOs for communication
 
 # Structured Message Passing
-![wip-original/attic/structured message passing.png](images/structured message passing.png)
+![](images/structured message passing.png)
 # First Principles Thinking
 [First Principles Thinking](#first-principles-thinking)
 # Various Random Issues
@@ -570,7 +570,7 @@ suggestion:
 
 
 
-![type stacks.png](images/type stacks.png)
+![](images/type stacks.png)
 
 # Solutions: Extending Flow-Based Programming
 
@@ -583,7 +583,7 @@ suggestion:
 		- implies fan-out for implementation
 		- implies single-entry & single-exit points, abstracting FIFOs (bounded queues) down to single input and single output
 
-![diagrammatic abstraction.png](images/diagrammatic abstraction.png)
+![](images/diagrammatic abstraction.png)
 
 # Secret Sauce of FBP
 0D
@@ -695,7 +695,7 @@ tags:
 ---
 
 # Fire And Forget
-![fireandforget-fire-and-forget.png](fireandforget-fire-and-forget.png)
+![](fireandforget-fire-and-forget.png)
 
 ### 2022-06-04-Fire and Forget
 
@@ -729,22 +729,22 @@ In the micro-managed model, two clocks are just like one bigger clock - all acti
 In an async model, the two clocks are completely independent.  The actions of one clock's gears do not affect, do not slow down, the action of the other clock's gears.
 
 # Simultaneity
-![fireandforget-simultaneity.png](fireandforget-simultaneity.png)
+![](fireandforget-simultaneity.png)
 
 # Faking Multitasking on 1 CPU
-![fireandforget-faking-on-1-cpu.png](fireandforget-faking-on-1-cpu.png)
+![](fireandforget-faking-on-1-cpu.png)
 # Anti 0D
 Tools that appease the use of dependencies instead of addressing the fundamental problem (getting rid of dependencies).
-![fireandforget-anti-0D.png](fireandforget-anti-0D.png)
+![](fireandforget-anti-0D.png)
 # Execution
-![fireandforget-execution.png](fireandforget-execution.png)
+![](fireandforget-execution.png)
 # Operating System Processes
-![fireandforget-operating-system-processes.png](fireandforget-operating-system-processes.png)
+![](fireandforget-operating-system-processes.png)
 # Multiple Single CPUs
-![fireandforget-multiple-single-cpus.png](fireandforget-multiple-single-cpus.png)iple Single CPUs
+![](fireandforget-multiple-single-cpus.png)iple Single CPUs
 
 # Closures
-![fireandforget-closures.png](fireandforget-closures.png)
+![](fireandforget-closures.png)
 
 [2022-06-04-Fire and Forget](#2022-06-04-fire-and-forget)
 

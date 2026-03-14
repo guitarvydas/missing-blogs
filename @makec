@@ -1,1 +1,2 @@
-python tools/analyze_corpus.py .
+#python tools/analyze_corpus.py .
+python tools/strip_image_alt.py

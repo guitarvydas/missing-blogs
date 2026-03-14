@@ -13,11 +13,11 @@ function f (...) {
 ```
 
 Would be written in diagram form as:
-![globals-freevariable.png](globals-freevariable.png)
+![](globals-freevariable.png)
 
 Upon seeing this, we would be compelled to rewrite it as:
 
-![globals-boundvariable.png](globals-boundvariable.png)
+![](globals-boundvariable.png)
 
 Which immediately wraps a *scope* around the global variable `x` and makes it obvious, to the reader, what the scope of `x` is and where it can be used.
 

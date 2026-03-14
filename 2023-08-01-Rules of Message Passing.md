@@ -2,7 +2,7 @@
 
 I think that the following cases need to be addressed, when thinking about Message Passing.
 
-![Excalidraw/2023-08-01-Rules of Message Passing 2023-08-02 06.31.45.excalidraw.svg](images/2023-08-01-Rules of Message Passing 2023-08-02 06.31.45.excalidraw.svg)
+![](images/2023-08-01-Rules of Message Passing 2023-08-02 06.31.45.excalidraw.svg)
 In the last case, bugs will happen if C and D don't see all messages in exactly the same order.
 
 For example, if
@@ -26,7 +26,7 @@ We can prevent this problem under-the-hood, if all of the Components, A, B, C, a
 
 ## Locking and Timing
 
-![kinopio pdf/Rules of Message Passing.pdf](Rules of Message Passing.pdf)
+![](Rules of Message Passing.pdf)
 
 
 ### Async

@@ -104,7 +104,7 @@ But, I chose not to implement *history* in this example, to keep things simple.
 ---
 # Top Level Lamp
 
-![hsm-Lamp 0.png](images/hsm-Lamp 0.png)
+![](images/hsm-Lamp 0.png)
 
 The Lamp has 3 toggle buttons
 1. power (pwr) "on" and "off"
@@ -112,7 +112,7 @@ The Lamp has 3 toggle buttons
 3. color "yellow", "green", "red" (3rd press goes back to "yellow")
 ---
 # Flat Diagram
-![hsm-Lamp.png](hsm-Lamp.png)
+![](hsm-Lamp.png)
 
 This diagram reads from Left to Right.
 
@@ -130,4 +130,4 @@ The 3 "colour" sub-machines are similar to one another.  We would like to have a
 ---
 # Collapsed Diagram
 
-![hsm-Lamp 2.png](images/hsm-Lamp 2.png)
+![](images/hsm-Lamp 2.png)

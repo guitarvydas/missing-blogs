@@ -44,7 +44,7 @@ In this code, Echo uses the `send` function instead of using `return` to return 
 
 To make *functions* into *software components*, we simply add input ports and output ports, e.g.
 
-![200](images/2023-04-15-Visualizing Software 2023-04-15 07.29.01.excalidraw.png)
+![](images/2023-04-15-Visualizing Software 2023-04-15 07.29.01.excalidraw.png)
 
 
 This basic example is so simple that we need only one input port and only one output port.  In general, though *software components* can have 0, 1, 2, 3, 4, ... input ports and 0, 1, 2, 3, 4, ... output ports.
@@ -54,12 +54,12 @@ This basic example is so simple that we need only one input port and only one ou
 ### Sequential Arrangement
 
 
-![400](images/2023-04-15-Visualizing Software 2023-04-15 07.50.51.excalidraw.png)
+![](images/2023-04-15-Visualizing Software 2023-04-15 07.50.51.excalidraw.png)
 
 
 ### Parallel Arrangement
 
-![200](images/2023-04-15-Visualizing Software 2023-04-15 07.52.13.excalidraw.png)
+![](images/2023-04-15-Visualizing Software 2023-04-15 07.52.13.excalidraw.png)
 
 
 ### Container Components
@@ -67,7 +67,7 @@ In the diagrams above, the input arrows seem to come from nowhere and the output
 
 We simply need to wrap the above diagrams in another component.
 
-![400](images/2023-04-15-Visualizing Software 2023-04-15 07.59.45.excalidraw.png)
+![](images/2023-04-15-Visualizing Software 2023-04-15 07.59.45.excalidraw.png)
 
 
 We call these kind of *wrapper* components, *Container* components.
@@ -317,11 +317,11 @@ We make do with draw.io's limitations.  To view the insides of a Container, you 
 
 ### Sequential Program Written In Draw.IO
 
-![handmade visibility jam/sequential.example.png](sequential.example.png)
+![](sequential.example.png)
 
 ### Parallel Program Written in Draw.IO
 
-![handmade visibility jam/parallel.example.png](parallel.example.png)
+![](parallel.example.png)
 
 
 ## Full-Blown App
@@ -343,7 +343,7 @@ This example does not show a 4th kind of connection - *through*.  This kind of c
 ## ė
 An ė (pronounced *eh* in ASCII) component is like a *lambda* that has one input queue and one output queue.
 
-![400](images/2023-04-08-The Benefits of True Decoupling 2023-04-09 17.53.46.excalidraw.png)
+![](images/2023-04-08-The Benefits of True Decoupling 2023-04-09 17.53.46.excalidraw.png)
 
 
 ## 0D
@@ -729,7 +729,7 @@ suggestion:
 
 
 
-![type stacks.png](images/type stacks.png)
+![](images/type stacks.png)
 
 # Solutions: Extending Flow-Based Programming
 
@@ -742,7 +742,7 @@ suggestion:
 		- implies fan-out for implementation
 		- implies single-entry & single-exit points, abstracting FIFOs (bounded queues) down to single input and single output
 
-![diagrammatic abstraction.png](images/diagrammatic abstraction.png)
+![](images/diagrammatic abstraction.png)
 
 # Secret Sauce of FBP
 0D
@@ -860,7 +860,7 @@ It is - now - possible to build many little syntax-based phases.  We don't do th
 
 ## True Decoupling (0D)
 
-![400](images/2023-04-08-The Benefits of True Decoupling 2023-04-09 17.53.46.excalidraw.png)
+![](images/2023-04-08-The Benefits of True Decoupling 2023-04-09 17.53.46.excalidraw.png)
 
 
 0D is laugingly easy, especially with closures and queues.
@@ -876,7 +876,7 @@ Examples of 0D are:
 Software components cannot call other software components.  Software components *must* use their own output API, instead.
 
 Probes need fan-out.  Forbidding fan-out due to academic reasons discourages use of the probing technique.
-![200](images/2023-04-08-The Benefits of True Decoupling 2023-04-10 17.54.20.excalidraw.png)
+![](images/2023-04-08-The Benefits of True Decoupling 2023-04-10 17.54.20.excalidraw.png)
 
 
 In electronics, probes suck a tiny bit of current away from the circuit being probed.  Electronics probes are "high impedance" and tend not to interfere with circuits under test.  Oscilloscopes and ohm-meters are electronic probes, but, lower-cost, stand-alone probes exist, too.
@@ -911,12 +911,12 @@ In the system shown below, we would expect to see output *v*, *w*, *z*, *z*.
 ---
 
 
-![Excalidraw/2023-04-02-Feedback 2023-04-02 08.36.23.excalidraw.png](images/2023-04-02-Feedback 2023-04-02 08.36.23.excalidraw.png)
+![](images/2023-04-02-Feedback 2023-04-02 08.36.23.excalidraw.png)
 
 
 ---
 
-![Excalidraw/2023-04-02-Feedback 2023-04-02 08.37.37.excalidraw.png](images/2023-04-02-Feedback 2023-04-02 08.37.37.excalidraw.png)
+![](images/2023-04-02-Feedback 2023-04-02 08.37.37.excalidraw.png)
 
 
 ---

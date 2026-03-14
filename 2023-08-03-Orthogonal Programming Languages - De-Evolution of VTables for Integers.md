@@ -35,4 +35,4 @@ This essay is still a work-in-progress and will change as the ideas are develope
 ## Subtle Evolution of Static Type Checking
 
 
-![DrawIO/integerfree.drawio.svg](integerfree.drawio.svg)
+![](integerfree.drawio.svg)

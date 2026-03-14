@@ -5,11 +5,11 @@ Thoughts on using draw.io to represent state machines
 
 My "freehand" diagram of the Decompressor component is
 
-![Drawware Brainstorming/states and transitions.png](images/states and transitions.png)
+![](images/states and transitions.png)
 
-![Drawware Brainstorming/states and transitions and events.png](images/states and transitions and events.png)
-![Drawware Brainstorming/states and transitions and events and guards.png](images/states and transitions and events and guards.png)
-![Drawware Brainstorming/states and transitions and events and guards and actions.png](images/states and transitions and events and guards and actions.png)
+![](images/states and transitions and events.png)
+![](images/states and transitions and events and guards.png)
+![](images/states and transitions and events and guards and actions.png)
 
 
 The code for this is in https://github.com/guitarvydas/coroutinesinc . The write-up / video is in progress...
@@ -50,7 +50,7 @@ In the above freehand example, I used colours to denote the different attributes
 	- AFAICT the text boxes need to be on the same draw.io layer as the edge 
 - It is possible to move text boxes off of their parent edges, visually
 
-![Drawware Brainstorming/text boxes for an edge.png](images/text boxes for an edge.png)
+![](images/text boxes for an edge.png)
 In this experiment, I assigned different background colours to the different text boxes. 
 - Blue for *states*
 - Red for *events*

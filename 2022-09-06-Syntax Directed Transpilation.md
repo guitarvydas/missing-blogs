@@ -39,7 +39,7 @@ At the end of the pipeline, all transformed chunks are glued together into a fin
 The code bits are wrapped in *verbatim brackets*.  The pattern-matchers simply skip over *verbatim* code and leave it alone.  PEG makes it possible to create nested *verbatim* chunks, so we don't need to worry about trying to create chunks in only a flat manner.  Worrying about keeping the chunks flattened is like premature optimization - worrying about flattening adds complication.  It is best to remove complication at first, then to add it back in later - after the basic design is working.
 
 # Pipeline
-![sdt/syntax directed transpilation.png](images/syntax directed transpilation.png)
+![](images/syntax directed transpilation.png)
 # The Successive Transformations
 ## Source JSON
 ```

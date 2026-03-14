@@ -249,7 +249,7 @@ suggestion:
 
 
 
-![type stacks.png](images/type stacks.png)
+![](images/type stacks.png)
 
 # Solutions: Extending Flow-Based Programming
 
@@ -262,7 +262,7 @@ suggestion:
 		- implies fan-out for implementation
 		- implies single-entry & single-exit points, abstracting FIFOs (bounded queues) down to single input and single output
 
-![diagrammatic abstraction.png](images/diagrammatic abstraction.png)
+![](images/diagrammatic abstraction.png)
 
 # Secret Sauce of FBP
 0D

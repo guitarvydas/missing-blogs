@@ -3,12 +3,12 @@ HSMs (Hierarchical State Machines) are very similar to StateCharts, minus "ortho
 
 ## Diagram Elements
 
-![Excalidraw/2023-04-22-Hierarchical State Machines 2023-04-22 06.06.36.excalidraw.png](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.06.36.excalidraw.png)
+![](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.06.36.excalidraw.png)
 
 
 ### Simplified Example
 
-![Excalidraw/2023-04-22-Hierarchical State Machines 2023-04-22 06.13.21.excalidraw.png](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.13.21.excalidraw.png)
+![](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.13.21.excalidraw.png)
 
 
 
@@ -18,10 +18,10 @@ HSMs (Hierarchical State Machines) are very similar to StateCharts, minus "ortho
 3. handler code
 4. exit code
 
-![Excalidraw/2023-04-22-Hierarchical State Machines 2023-04-22 06.14.57.excalidraw.png](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.14.57.excalidraw.png)
+![](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.14.57.excalidraw.png)
 
 
-![Excalidraw/2023-04-22-Hierarchical State Machines 2023-04-22 06.18.00.excalidraw.png](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.18.00.excalidraw.png)
+![](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.18.00.excalidraw.png)
 
 
 A state can contain another full state machine (it's child)[^vis].
@@ -41,7 +41,7 @@ Upon *entry*, children state machines (if any) are entered.  This happens in a t
 1. guard
 2. code
 
-![Excalidraw/2023-04-22-Hierarchical State Machines 2023-04-22 06.37.42.excalidraw.png](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.37.42.excalidraw.png)
+![](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.37.42.excalidraw.png)
 
 
 A *guard* is a boolean function (aka *predicate*) that fires the transition when given conditions are met.
@@ -74,7 +74,7 @@ N.B. If a transition loops back onto the same state, the state performs its exit
 
 Note that a programmer can control code execution by choosing to place code on transitions or entries/exits of a state.  For example, if you want to run code only once when entering a state that has a loopback transition, leave the *entry* code empty and place the run-once code on the transition into the state.
 
-![Excalidraw/2023-04-22-Hierarchical State Machines 2023-04-22 06.54.11.excalidraw.png](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.54.11.excalidraw.png)
+![](images/2023-04-22-Hierarchical State Machines 2023-04-22 06.54.11.excalidraw.png)
 
 
 *Guard* is a *boolean function (predicate)*.
@@ -134,7 +134,7 @@ When the lamp is first turned ON, it always lights at LOW intensity.  Subsequent
 
 When the lamp is turned OFF - using a second push of the first switch - the lamp turns off, regardless of which intensity it was set at.
 
-![Excalidraw/2023-04-22-Hierarchical State Machines 2023-04-22 07.32.26.excalidraw.png](images/2023-04-22-Hierarchical State Machines 2023-04-22 07.32.26.excalidraw.png)
+![](images/2023-04-22-Hierarchical State Machines 2023-04-22 07.32.26.excalidraw.png)
 
 
 Due to the limitations of this drawing tool...

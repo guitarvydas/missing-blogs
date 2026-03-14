@@ -1,5 +1,5 @@
 # 2022-07-16-LCSM Software Components (WP)Working Paper
-![lcsm.png](lcsm.png)
+![](lcsm.png)
 # Synopsis
 A software component has an interface that contains:
 - exactly one *reset* input `☒`

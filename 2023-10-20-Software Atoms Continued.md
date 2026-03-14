@@ -4,7 +4,7 @@ Atoms are
 - composable
 - asynchronous.
 
-![@blogs/diagrams/coupling-atom.drawio.svg](coupling-atom.drawio.svg)
+![](coupling-atom.drawio.svg)
 Not atomic: `f`.
 
 Stand-alone : requires `x`

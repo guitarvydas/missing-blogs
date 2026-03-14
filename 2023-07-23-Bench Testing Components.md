@@ -2,7 +2,7 @@
 
 Imagine that we have a component such as in this drawing
 
-![100](BenchTesting.drawio.svg)
+![](BenchTesting.drawio.svg)
 
 and that the abstract specification of this component - C - is:
 1. if *input* satisfies some property, then the component C produces some kind of outputs on ports *output1* and *output2*

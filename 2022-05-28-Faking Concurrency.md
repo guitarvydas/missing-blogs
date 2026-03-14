@@ -18,7 +18,7 @@ tags:
 ---
 
 # Fire And Forget
-![fireandforget-fire-and-forget.png](fireandforget-fire-and-forget.png)
+![](fireandforget-fire-and-forget.png)
 
 ### 2022-06-04-Fire and Forget
 
@@ -52,20 +52,20 @@ In the micro-managed model, two clocks are just like one bigger clock - all acti
 In an async model, the two clocks are completely independent.  The actions of one clock's gears do not affect, do not slow down, the action of the other clock's gears.
 
 # Simultaneity
-![fireandforget-simultaneity.png](fireandforget-simultaneity.png)
+![](fireandforget-simultaneity.png)
 
 # Faking Multitasking on 1 CPU
-![fireandforget-faking-on-1-cpu.png](fireandforget-faking-on-1-cpu.png)
+![](fireandforget-faking-on-1-cpu.png)
 # Anti 0D
 Tools that appease the use of dependencies instead of addressing the fundamental problem (getting rid of dependencies).
-![fireandforget-anti-0D.png](fireandforget-anti-0D.png)
+![](fireandforget-anti-0D.png)
 # Execution
-![fireandforget-execution.png](fireandforget-execution.png)
+![](fireandforget-execution.png)
 # Operating System Processes
-![fireandforget-operating-system-processes.png](fireandforget-operating-system-processes.png)
+![](fireandforget-operating-system-processes.png)
 # Multiple Single CPUs
-![fireandforget-multiple-single-cpus.png](fireandforget-multiple-single-cpus.png)iple Single CPUs
+![](fireandforget-multiple-single-cpus.png)iple Single CPUs
 
 # Closures
-![fireandforget-closures.png](fireandforget-closures.png)
+![](fireandforget-closures.png)
 )
