@@ -1,5 +1,11 @@
 # missing blogs
 
+# 2026-03-14
+Working on 2022-07-18-Multitasking script.md
+- found ref to descript video
+- created ~/Desktop/blog-videos and exported the video to Multitasking.mp4
+
+
 # 2026-03-07
 
 - when did I stop using Obsidian for blogs?

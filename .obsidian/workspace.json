@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2022-07-11-Type Stacks.md",
+                "file": "2022-07-18-Multitasking script.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2022-07-11-Type Stacks"
+              "title": "2022-07-18-Multitasking script"
             }
           },
           {
@@ -199,6 +199,17 @@
   },
   "active": "cad05b063fa4dc4d",
   "lastOpenFiles": [
+    "videos/hello.txt",
+    "videos",
+    "#README.md#",
+    "2022-07-18-CPS is GOTO.md",
+    "2022-07-17-Notation Suitability.md",
+    "2022-07-16-LCSM Software Components (WP).md",
+    "2022-07-13-Syntax Is Cheap.md",
+    "2022-07-12-BRS-Organizing Anything.md",
+    "2022-07-11-Why Flow-Based Programming Has Not Become More Popular 1.md",
+    "2022-07-11-Why Flow-Based Programming Has Not Become More Popular.md",
+    "2022-07-11-Type Stacks.md",
     "tools/escape_image_paths.py",
     "tools/dev.bash~",
     "tools/dev.bash",
@@ -221,22 +232,11 @@
     "2022-07-06-Technical Diagrams For Software.md",
     "2022-07-06-BRS-Wheel Reinvention Jam Ideas.md",
     "2022-07-03-Staged Transpilation.md",
-    "2022-07-03-BRS Towards A Syntax For Technical Diagrams Of Software.md",
-    "2022-06-29-BRS Towards A Syntax For Technical Diagrams Of Software.md",
-    "2022-06-27-Unbraiding Programming Principles.md",
-    "2022-06-27-Sequential Scheduling.md",
-    "2022-06-27-If All You Have Is A Hammer Everything Looks Like A Nail.md",
-    "2022-06-26-Compiling vs. Modelling.md",
-    "2022-06-25-Unbraiding Visual Programming.md",
-    "2022-06-25-Unbraiding Syntax.md",
     "checklist.numbers.sb-8ad476ca-bbNcsH",
     "images/like that editor-text_15.png",
     "images/like that editor-diagram_15.png",
     "checklist.numbers",
     "corpus_analysis.json",
-    "tools/analyze_corpus.py",
-    "@make",
-    "@makec",
     "corpus/pbp/sm/pbp/pbp-lifecycle.drawio.png",
     "corpus/pbp/dtree/pbp/pbp-lifecycle.drawio.png",
     "pbp/dtree/pbp/pbp-lifecycle.drawio.png",
