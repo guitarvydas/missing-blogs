@@ -58,7 +58,7 @@ balanced {
 ```
 A screenshot of this pattern matcher is seen below
 
-![](images/balanced paren Screen Shot 2022-06-06 at 6.17.49 PM.png)
+![](images/balanced%20paren%20Screen%20Shot%202022-06-06%20at%206.17.49%20PM.png)
 One of the possible uses of a balanced-braces parser might be to insert path-testing code after every open brace in a C program.  Using a balanced-braces parser means that you don't have to write a grammar the understands all of C, but only looks for brace brackets.
 
 

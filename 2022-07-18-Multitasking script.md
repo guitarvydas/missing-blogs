@@ -31,7 +31,7 @@ activities are different but begin running at the same time
 
 ---
 
-![](images/fireandforget-Multitasking Simultaneity.png)
+![](images/fireandforget-Multitasking%20Simultaneity.png)
 
 ---
 [multitasking screencast](https://share.descript.com/view/tWtyo1hpKaA)

@@ -11,7 +11,7 @@ There a 3 things in a line.
 2.  humanoid robot
 3. a small box from Amazon.
 
-![](images/robot use case.png)
+![](images/robot%20use%20case.png)
 
 I want the robot to hand me the box.
 

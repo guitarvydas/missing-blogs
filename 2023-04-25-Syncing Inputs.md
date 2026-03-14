@@ -28,7 +28,7 @@ Yes, if you really, really need to sync up the two inputs, then HSMs are one goo
 
 This sync'ing idiom is very common and was well-understood in hardware design in 1960.  It's called "a race condition".  In fact, it is the *only* real race condition - everything else programmers call "race conditions" are self-imposed accidental complexities due to the misuse of functions to solve this problem.  Off the top of my head, the diagram is...
 
-![](images/2023-04-25-Syncing Inputs 2023-04-25 07.01.39.excalidraw.png)
+![](images/2023-04-25-Syncing%20Inputs%202023-04-25%2007.01.39.excalidraw.png)
 
 
 ## Pseudocode

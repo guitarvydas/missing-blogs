@@ -12,13 +12,13 @@ To do this we need:
 ## Hello World 
 Very simple example
 ## Leaf
-![](images/hello world eh-Leaf.png)
+![](images/hello%20world%20eh-Leaf.png)
 
 ## Container
-![](images/hello world eh-helloworld.png) 
+![](images/hello%20world%20eh-helloworld.png) 
 
 ## Re-Architecting
-![](images/hello world eh-helloworldworld.png)
+![](images/hello%20world%20eh-helloworldworld.png)
 ## Scalability
 Pluggability is necessary for scalability, but, more elaborate (complicated) examples would be needed.
 

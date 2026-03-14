@@ -11,7 +11,7 @@ If something goes wrong, an error message (probably a string) is sent to the err
 
 # DI - Outline
 
-![](images/Tee-Tee Outline.drawio.svg)
+![](images/Tee-Tee%20Outline.drawio.svg)
 
 The Tee component has two inputs and two outputs.
 

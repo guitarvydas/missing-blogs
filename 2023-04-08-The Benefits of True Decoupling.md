@@ -39,7 +39,7 @@ It is - now - possible to build many little syntax-based phases.  We don't do th
 
 ## True Decoupling (0D)
 
-![](images/2023-04-08-The Benefits of True Decoupling 2023-04-09 17.53.46.excalidraw.png)
+![](images/2023-04-08-The%20Benefits%20of%20True%20Decoupling%202023-04-09%2017.53.46.excalidraw.png)
 
 
 0D is laugingly easy, especially with closures and queues.
@@ -55,7 +55,7 @@ Examples of 0D are:
 Software components cannot call other software components.  Software components *must* use their own output API, instead.
 
 Probes need fan-out.  Forbidding fan-out due to academic reasons discourages use of the probing technique.
-![](images/2023-04-08-The Benefits of True Decoupling 2023-04-10 17.54.20.excalidraw.png)
+![](images/2023-04-08-The%20Benefits%20of%20True%20Decoupling%202023-04-10%2017.54.20.excalidraw.png)
 
 
 In electronics, probes suck a tiny bit of current away from the circuit being probed.  Electronics probes are "high impedance" and tend not to interfere with circuits under test.  Oscilloscopes and ohm-meters are electronic probes, but, lower-cost, stand-alone probes exist, too.

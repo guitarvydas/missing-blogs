@@ -12,13 +12,13 @@ To do this we need:
 ## Hello World 
 Very simple example
 ## Leaf
-![](images/hello world eh-Leaf.png)
+![](images/hello%20world%20eh-Leaf.png)
 
 ## Container
-![](images/hello world eh-helloworld.png) 
+![](images/hello%20world%20eh-helloworld.png) 
 
 ## Re-Architecting
-![](images/hello world eh-helloworldworld.png)
+![](images/hello%20world%20eh-helloworldworld.png)
 
 # Benefits
 - technical drawings come "for free"
@@ -103,7 +103,7 @@ After that would come a rearrangement of *helloworld.py* that would contain one 
 ## Pipelines
 Pipelines are useful for plumbing software units together, but, functions calling functions do not implement pipelines (due to the LIFO issue).
 ## Structured Message Passing
-![](images/structured message passing.png)
+![](images/structured%20message%20passing.png)
 ## First Principles Thinking
 
 ## First Principles Thinking
@@ -153,7 +153,7 @@ Pluggability is necessary for scalability, but, more elaborate (complicated) exa
 	- pipelines use FIFOs for communication
 
 # Structured Message Passing
-![](images/structured message passing.png)
+![](images/structured%20message%20passing.png)
 # First Principles Thinking
 [First Principles Thinking](#first-principles-thinking)
 # Various Random Issues
@@ -570,7 +570,7 @@ suggestion:
 
 
 
-![](images/type stacks.png)
+![](images/type%20stacks.png)
 
 # Solutions: Extending Flow-Based Programming
 
@@ -583,7 +583,7 @@ suggestion:
 		- implies fan-out for implementation
 		- implies single-entry & single-exit points, abstracting FIFOs (bounded queues) down to single input and single output
 
-![](images/diagrammatic abstraction.png)
+![](images/diagrammatic%20abstraction.png)
 
 # Secret Sauce of FBP
 0D

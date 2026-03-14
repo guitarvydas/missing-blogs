@@ -8,7 +8,7 @@ copied_to_pages: "true"
 # Message Passing
 Message Passing uses FIFOs (queues), CALL/RETURN uses LIFOs (stack).
 
-![](images/Message Passing vs CALL RETURN.png)
+![](images/Message%20Passing%20vs%20CALL%20RETURN.png)
 
 
 ## The State Explosion Problem
@@ -22,18 +22,18 @@ Example: imagine a simple table lamp with 2 push-buttons
 
 ## Example
 ### Lamp
-![](images/state explosion-Lamp.png)
+![](images/state%20explosion-Lamp.png)
 
 
 ### State Explosion
 
-![](images/state explosion-State Explosion.png)
+![](images/state%20explosion-State%20Explosion.png)
 
 The *state explosion* problem becomes more severe in more complicated software architectures.
 
 ### Layering - HSM - Hierarchical State Machine
 
-![](images/state explosion-HSM - Hierarchical State Machine.png)
+![](images/state%20explosion-HSM%20-%20Hierarchical%20State%20Machine.png)
 
 Originally suggested by Harel in StateCharts paper.
 
@@ -42,7 +42,7 @@ Concurrency is moved to a separate notation. "Concurrency" is called "orthogonal
 
 
 # Structured Message Passing
-![](images/structured message passing.png)
+![](images/structured%20message%20passing.png)
 
 Message passing is structured in a layered/hierarchical manner.
 
@@ -66,12 +66,12 @@ All Components are constructed in a 0D - zero dependency - manner.  0D Component
 # Message Passing
 Message Passing uses FIFOs (queues), CALL/RETURN uses LIFOs (stack).
 
-![](images/Message Passing vs CALL RETURN.png)
+![](images/Message%20Passing%20vs%20CALL%20RETURN.png)
 
 ---
 
 ## Structured Message Passing
-![](images/structured message passing.png)
+![](images/structured%20message%20passing.png)
 
 ---
 

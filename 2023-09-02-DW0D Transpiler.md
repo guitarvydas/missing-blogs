@@ -2,7 +2,7 @@
 # Transpiler Component
 
 The top-level transpiler looks like this:
-![](images/2023-09-02-DW0D Transpiler 2023-09-02 22.23.30.excalidraw.svg)
+![](images/2023-09-02-DW0D%20Transpiler%202023-09-02%2022.23.30.excalidraw.svg)
 
 
 "SCN" means Solution Centric Notation.  Essentially a DSL, but more focussed.
@@ -21,7 +21,7 @@ The top-level transpiler is internally composed of several other components.
 
 # Ohm-JS Component
 
-![](images/2023-09-02-DW0D Transpiler 2023-09-03 04.17.57.excalidraw.svg)
+![](images/2023-09-02-DW0D%20Transpiler%202023-09-03%2004.17.57.excalidraw.svg)
 
 
 The Ohm-JS component *looks* a lot like the *transpiler* component, but, they are different.
@@ -40,7 +40,7 @@ The "src" input port is text to be processed by the Ohm-JS component.  Usually t
 
 The transpiler component contains two (2) instances of the Ohm-JS component, plus some hard-wired source code.  The net effect of this implementation is to provide a simple API that looks like the transpiler component to the outside world.
 
-![](images/2023-09-02-DW0D Transpiler 2023-09-03 05.21.39.excalidraw.svg)
+![](images/2023-09-02-DW0D%20Transpiler%202023-09-03%2005.21.39.excalidraw.svg)
 
 
 Ideally, the hard-coded parts will be fired once at the beginning of time.  Practically, we need to trigger them.
@@ -49,4 +49,4 @@ In this design, we will send a trigger to each of the three (3) hard-coded parts
 
 Redrawn in draw.io, the transpiler implementation is
 
-![](images/transpiler drawio.png)
+![](images/transpiler%20drawio.png)

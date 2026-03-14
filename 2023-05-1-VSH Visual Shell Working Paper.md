@@ -11,7 +11,7 @@ In the original...
 2. The diagram compiler was written as 8 lumps of PROLOG and one lump of Lisp that preprocesses the XML diagram format (.graphml) into a form that is compatible with PROLOG (.pl).  Later, all of the PROLOG code was replaced by Lisp imperative code to show that the use of PROLOG was not a vital part of the solution.
 3. The .gsh interpreter was written in C and translates 8 simple instructions into UNIX system calls, such as `execv()`, `dup2()`, etc.  The C program was called *grash*.
 
-![](images/2023-05-1-VSH Visual Shell Working Paper 2023-05-01 05.36.15.excalidraw.png)
+![](images/2023-05-1-VSH%20Visual%20Shell%20Working%20Paper%202023-05-01%2005.36.15.excalidraw.png)
 
 
 ## Moving Forward into Odin0D
@@ -52,7 +52,7 @@ $ ./run
 
 ### sketch
 
-![](images/2023-05-1-VSH Visual Shell Working Paper 2023-05-01 22.58.37.excalidraw.png)
+![](images/2023-05-1-VSH%20Visual%20Shell%20Working%20Paper%202023-05-01%2022.58.37.excalidraw.png)
 
 
 ## Update 2023-05-02

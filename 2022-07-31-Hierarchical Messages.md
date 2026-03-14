@@ -6,7 +6,7 @@ A Message is
 
 Akin to network protocol layers where a packet is wrapped by header and trailer information which is unpacked at certain levels.
 
-![](images/hm-network protocol.png)
+![](images/hm-network%20protocol.png)
 
 
 

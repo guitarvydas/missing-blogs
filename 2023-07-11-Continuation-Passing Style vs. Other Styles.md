@@ -107,10 +107,10 @@ L1:
 ```
 ## State Machine Style
 
-![](images/2023-07-11-Continuation-Passing Style 2023-07-11 22.41.33.excalidraw.svg)
+![](images/2023-07-11-Continuation-Passing%20Style%202023-07-11%2022.41.33.excalidraw.svg)
 
 ## Drakon Style
-![](images/Drakon Style diagram Screenshot 2023-07-12 at 6.24.34 AM.png)
+![](images/Drakon%20Style%20diagram%20Screenshot%202023-07-12%20at%206.24.34%20AM.png)
 ## Appendix
 Drakon Hub: https://drakonhub.com
 

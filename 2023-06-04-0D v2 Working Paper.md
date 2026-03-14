@@ -5,7 +5,7 @@
 - how to use existing Odin0D code, while allowing experiments with changes to runtime?
 
 ## Current Status
-![](images/0d v2-Odin0D.drawio.png)
+![](images/0d%20v2-Odin0D.drawio.png)
 
 ## Divide & Conquer
-![](images/0d v2-0Dv2.drawio.png)
+![](images/0d%20v2-0Dv2.drawio.png)

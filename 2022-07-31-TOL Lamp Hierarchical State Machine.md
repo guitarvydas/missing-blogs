@@ -117,7 +117,7 @@ But, I chose not to implement *history* in this example, to keep things simple.
 ---
 # Top Level Lamp
 
-![](images/hsm-Lamp 0.png)
+![](images/hsm-Lamp%200.png)
 
 The Lamp has 3 toggle buttons
 1. power (pwr) "on" and "off"
@@ -143,7 +143,7 @@ The 3 "colour" sub-machines are similar to one another.  We would like to have a
 ---
 # Collapsed Diagram
 
-![](images/hsm-Lamp 2.png)
+![](images/hsm-Lamp%202.png)
 
 The above essay discusses the design of the Lamp example used here.
 
@@ -258,14 +258,14 @@ FIFOs vs LIFOs
 # Asynchronous vs Synchronous
 Multiple Outputs
 
-![](images/containers-20220731-multiple outputs.png)
+![](images/containers-20220731-multiple%20outputs.png)
 
 ---
 
 # Asynchronous vs Synchronous
 Multiple Inputs
 
-![](images/containers-20220731-multiple inputs.png)
+![](images/containers-20220731-multiple%20inputs.png)
 
 ---
 
