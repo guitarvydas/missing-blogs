@@ -1,4 +1,5 @@
-# 2023-07-18-Odin0D in 3 PartsThe current manifestation of 0D (zero-dependency, component-based programming) can be split into three major pieces.
+# 2023-07-18-Odin0D in 3 Parts
+The current manifestation of 0D (zero-dependency, component-based programming) can be split into three major pieces.
 
 The current version of the code, as one big piece, is in the repo https://github.com/guitarvydas/odin0d.
 

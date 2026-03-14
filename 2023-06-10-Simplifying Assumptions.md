@@ -1,4 +1,5 @@
-# 2023-06-10-Simplifying AssumptionsPhysicists use something called *simplifying assumptions* when thinking about complex problems and designing notations to describe these problems and solutions to these problems.
+# 2023-06-10-Simplifying Assumptions
+Physicists use something called *simplifying assumptions* when thinking about complex problems and designing notations to describe these problems and solutions to these problems.
 
 Programmers use but one *simplifying assumption* - sequential operation, synchrony - which fits one use-case for PEMs (Programmable Electronic Machines, aka "computers"), but, does not fit well with other use-cases for PEMs, like sequencing.
 

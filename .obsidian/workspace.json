@@ -13,7 +13,21 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "corpus/corpus_analysis.md",
+                "file": "2023-06-10-Temporal Decoupling.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2023-06-10-Temporal Decoupling"
+            }
+          },
+          {
+            "id": "784c3ee119fb5ee9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "corpus_analysis.md",
                 "mode": "source",
                 "source": false
               },
@@ -21,7 +35,8 @@
               "title": "corpus_analysis"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,20 +198,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "cad05b063fa4dc4d",
+  "active": "784c3ee119fb5ee9",
   "lastOpenFiles": [
-    "2022-05-28-Multitasking - How It Works.md",
+    "2023-06-10-Temporal Decoupling.md",
+    "2023-06-10-Simplifying Assumptions.md",
+    "2023-07-18-Odin0D in 3 Parts.md",
     "corpus_analysis.md",
+    "2023-06-24-Programming Simplicity, 0D, Single Threaded Programming.md",
+    "2023-04-08-Type Checking and Premature Optimization.md",
+    "2022-05-28-Multitasking - How It Works.md",
+    "corpus_analysis.json",
+    "tools/analyze_corpus.py",
+    "@make",
+    "@makec",
+    "tools/characterize.py~",
+    "corpus/corpus_analysis.md",
     "corpus/corpus_analysis.json",
     "corpus/@make",
     "corpus/pbp/del_blank_lines",
     "corpus/pbp/kernel/splitoutput.js",
     "corpus/pbp/kernel/repl.py",
-    "corpus/pbp/kernel/package.json",
-    "corpus/pbp/kernel/kernel0d.py",
-    "corpus/pbp/kernel/kernel0d.lisp",
-    "corpus/pbp/kernel/kernel0d.js",
-    "corpus/pbp/kernel",
     "corpus/pbp/sm/pbp/dtree/README.process_json.md",
     "corpus/pbp/sm/pbp/dtree/README.md",
     "corpus/pbp/sm/pbp/dtree/DOCUMENTATION.md",
@@ -209,7 +230,6 @@
     "corpus/pbp/dtree/pbp/api.md",
     "corpus/pbp/api.md",
     "corpus/README.md",
-    "corpus/corpus_analysis.md",
     "corpus/2023-11-20-Thoughts on VPLs.md",
     "corpus/2023-11-19-The Meaning of Layout.md",
     "corpus/2023-10-31-What If? (Philosophy).md",
@@ -218,11 +238,6 @@
     "corpus/2023-10-18-Software Atoms.md",
     "corpus/2023-10-15-Examining Dynamic Program Structure.md",
     "corpus/2023-09-19-Why Does Vinyl Sound Better Than Digital?.md",
-    "corpus/2023-09-19-Recursive Text.md",
-    "corpus/2023-09-18-Transpilation - Avoiding Edge Cases.md",
-    "corpus/2023-09-09-How I Use Ohm-JS.md",
-    "corpus/2023-09-05-Breaking the Four Minute Mile of Programming.md",
-    "corpus/2023-09-04-Using a Thesaurus for Programming Language Design.md",
     "pbp/dtree/pbp/pbp-lifecycle.drawio.png",
     "pbp/sm/pbp/pbp-lifecycle.drawio.png",
     "images/2023-02-11-Computers Dont Just Compute 2023-02-11 10.08.18.excalidraw.png",
