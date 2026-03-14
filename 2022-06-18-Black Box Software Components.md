@@ -1,4 +1,5 @@
-# 2022-06-18-Black Box Software Components![pm/smallstepswithtbx/fmt-Transpiler.png](fmt-Transpiler.png)
+# 2022-06-18-Black Box Software Components
+![pm/smallstepswithtbx/fmt-Transpiler.png](fmt-Transpiler.png)
 
 > [!tip] A black box does not know where its output messages will be routed.
 

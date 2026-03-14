@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-06-10-Temporal Decoupling.md",
+                "file": "2022-06-18-Black Box Software Components.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2023-06-10-Temporal Decoupling"
+              "title": "2022-06-18-Black Box Software Components"
             }
           },
           {
@@ -200,14 +200,15 @@
   },
   "active": "784c3ee119fb5ee9",
   "lastOpenFiles": [
+    "corpus_analysis.json",
+    "2022-06-18-Black Box Software Components.md",
     "2023-06-10-Temporal Decoupling.md",
+    "corpus_analysis.md",
     "2023-06-10-Simplifying Assumptions.md",
     "2023-07-18-Odin0D in 3 Parts.md",
-    "corpus_analysis.md",
     "2023-06-24-Programming Simplicity, 0D, Single Threaded Programming.md",
     "2023-04-08-Type Checking and Premature Optimization.md",
     "2022-05-28-Multitasking - How It Works.md",
-    "corpus_analysis.json",
     "tools/analyze_corpus.py",
     "@make",
     "@makec",
@@ -236,8 +237,6 @@
     "corpus/2023-10-22-ECS Thoughts.md",
     "corpus/2023-10-20-Software Atoms Continued.md",
     "corpus/2023-10-18-Software Atoms.md",
-    "corpus/2023-10-15-Examining Dynamic Program Structure.md",
-    "corpus/2023-09-19-Why Does Vinyl Sound Better Than Digital?.md",
     "pbp/dtree/pbp/pbp-lifecycle.drawio.png",
     "pbp/sm/pbp/pbp-lifecycle.drawio.png",
     "images/2023-02-11-Computers Dont Just Compute 2023-02-11 10.08.18.excalidraw.png",
